@@ -1,0 +1,289 @@
+    1   0.000000 10.128.27.116 → 10.64.0.1    DNS 76 Standard query 0x12a0 A www.utexas.edu
+    2   0.000000    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=185, datalen=64
+    3   0.000000 10.128.27.116 → 10.64.0.1    DNS 76 Standard query 0x12a0 AAAA www.utexas.edu
+    4   0.008000    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=186, datalen=64
+    5   0.149496 185.195.233.76 → 10.0.2.15    WireGuard 156 Transport Data, receiver=0x0975D3B5, counter=275, datalen=80
+    6   0.149527 185.195.233.76 → 10.0.2.15    WireGuard 204 Transport Data, receiver=0x0975D3B5, counter=276, datalen=128
+    7   0.148004    10.64.0.1 → 10.128.27.116 DNS 92 Standard query response 0x12a0 A www.utexas.edu A 23.185.0.4
+    8   0.148004    10.64.0.1 → 10.128.27.116 DNS 132 Standard query response 0x12a0 AAAA www.utexas.edu AAAA 2620:12a:8001::4 AAAA 2620:12a:8000::4
+    9   0.148004 10.128.27.116 → 23.185.0.4   TCP 76 51992 → 443 [SYN] Seq=0 Win=64320 Len=0 MSS=1340 SACK_PERM=1 TSval=2616525287 TSecr=0 WS=128
+   10   0.148004    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=187, datalen=64
+   11   0.287985 185.195.233.76 → 10.0.2.15    WireGuard 140 Transport Data, receiver=0x0975D3B5, counter=277, datalen=64
+   12   0.280008   23.185.0.4 → 10.128.27.116 TCP 76 443 → 51992 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1340 SACK_PERM=1 TSval=1156266774 TSecr=2616525287 WS=512
+   13   0.280008 10.128.27.116 → 23.185.0.4   TCP 68 51992 → 443 [ACK] Seq=1 Ack=1 Win=64384 Len=0 TSval=2616525419 TSecr=1156266774
+   14   0.280008    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=188, datalen=64
+   15   0.280008 10.128.27.116 → 23.185.0.4   TLSv1 585 Client Hello
+   16   0.280008    10.0.2.15 → 185.195.233.76 WireGuard 652 Transport Data, receiver=0x781D81D2, counter=189, datalen=576
+   17   0.421683 185.195.233.76 → 10.0.2.15    WireGuard 140 Transport Data, receiver=0x0975D3B5, counter=278, datalen=64
+   18   0.420012   23.185.0.4 → 10.128.27.116 TCP 68 443 → 51992 [ACK] Seq=1 Ack=518 Win=145920 Len=0 TSval=1156266916 TSecr=2616525419
+   19   0.424555 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=279, datalen=1380
+   20   0.424565 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=280, datalen=1380
+   21   0.424619 185.195.233.76 → 10.0.2.15    WireGuard 844 Transport Data, receiver=0x0975D3B5, counter=281, datalen=768
+   22   0.424012   23.185.0.4 → 10.128.27.116 TLSv1.3 1396 Server Hello, Change Cipher Spec, Application Data
+   23   0.424012 10.128.27.116 → 23.185.0.4   TCP 68 51992 → 443 [ACK] Seq=518 Ack=1329 Win=64256 Len=0 TSval=2616525563 TSecr=1156266918
+   24   0.424012   23.185.0.4 → 10.128.27.116 TCP 1396 443 → 51992 [PSH, ACK] Seq=1329 Ack=518 Win=145920 Len=1328 TSval=1156266918 TSecr=2616525419 [TCP segment of a reassembled PDU]
+   25   0.424012   23.185.0.4 → 10.128.27.116 TLSv1.3 772 Application Data, Application Data, Application Data, Application Data
+   26   0.424012 10.128.27.116 → 23.185.0.4   TCP 68 51992 → 443 [ACK] Seq=518 Ack=2657 Win=63488 Len=0 TSval=2616525563 TSecr=1156266918
+   27   0.424012 10.128.27.116 → 23.185.0.4   TCP 68 51992 → 443 [ACK] Seq=518 Ack=3361 Win=62848 Len=0 TSval=2616525563 TSecr=1156266918
+   28   0.424012    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=190, datalen=64
+   29   0.424012    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=191, datalen=64
+   30   0.424012    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=192, datalen=64
+   31   0.424012 10.128.27.116 → 23.185.0.4   TLSv1.3 132 Change Cipher Spec, Application Data
+   32   0.424012    10.0.2.15 → 185.195.233.76 WireGuard 204 Transport Data, receiver=0x781D81D2, counter=193, datalen=128
+   33   0.424012 10.128.27.116 → 23.185.0.4   TLSv1.3 163 Application Data, Application Data
+   34   0.426176 10.128.27.116 → 23.185.0.4   TLSv1.3 165 Application Data, Application Data
+   35   0.424012    10.0.2.15 → 185.195.233.76 WireGuard 236 Transport Data, receiver=0x781D81D2, counter=194, datalen=160
+   36   0.424012    10.0.2.15 → 185.195.233.76 WireGuard 236 Transport Data, receiver=0x781D81D2, counter=195, datalen=160
+   37   0.554888 185.195.233.76 → 10.0.2.15    WireGuard 140 Transport Data, receiver=0x0975D3B5, counter=282, datalen=64
+   38   0.552016   23.185.0.4 → 10.128.27.116 TCP 68 443 → 51992 [ACK] Seq=3361 Ack=582 Win=145920 Len=0 TSval=1156267048 TSecr=2616525563
+   39   0.555996 185.195.233.76 → 10.0.2.15    WireGuard 140 Transport Data, receiver=0x0975D3B5, counter=283, datalen=64
+   40   0.556014 185.195.233.76 → 10.0.2.15    WireGuard 204 Transport Data, receiver=0x0975D3B5, counter=284, datalen=128
+   41   0.556114 185.195.233.76 → 10.0.2.15    WireGuard 140 Transport Data, receiver=0x0975D3B5, counter=285, datalen=64
+   42   0.552016   23.185.0.4 → 10.128.27.116 TCP 68 443 → 51992 [ACK] Seq=3361 Ack=677 Win=145920 Len=0 TSval=1156267049 TSecr=2616525563
+   43   0.552016   23.185.0.4 → 10.128.27.116 TLSv1.3 133 Application Data
+   44   0.552016   23.185.0.4 → 10.128.27.116 TCP 68 443 → 51992 [ACK] Seq=3426 Ack=774 Win=145920 Len=0 TSval=1156267049 TSecr=2616525565
+   45   0.552016 10.128.27.116 → 23.185.0.4   TLSv1.3 99 Application Data
+   46   0.552016    10.0.2.15 → 185.195.233.76 WireGuard 172 Transport Data, receiver=0x781D81D2, counter=196, datalen=96
+   47   0.563698 185.195.233.76 → 10.0.2.15    WireGuard 780 Transport Data, receiver=0x0975D3B5, counter=286, datalen=704
+   48   0.563755 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=287, datalen=1380
+   49   0.563764 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=288, datalen=1380
+   50   0.563814 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=289, datalen=1380
+   51   0.563867 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=290, datalen=1380
+   52   0.563873 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=291, datalen=1380
+   53   0.563874 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=292, datalen=1380
+   54   0.560016   23.185.0.4 → 10.128.27.116 TLSv1.3 718 Application Data
+   55   0.560016   23.185.0.4 → 10.128.27.116 TLSv1.3 1396 Application Data
+   56   0.560016   23.185.0.4 → 10.128.27.116 TLSv1.3 1396 Application Data
+   57   0.560016   23.185.0.4 → 10.128.27.116 TLSv1.3 1396 Application Data
+   58   0.560016   23.185.0.4 → 10.128.27.116 TLSv1.3 1396 Application Data
+   59   0.560016   23.185.0.4 → 10.128.27.116 TLSv1.3 1396 Application Data
+   60   0.560016   23.185.0.4 → 10.128.27.116 TLSv1.3 1396 Application Data
+   61   0.560016 10.128.27.116 → 23.185.0.4   TCP 68 51992 → 443 [ACK] Seq=805 Ack=12044 Win=58752 Len=0 TSval=2616525699 TSecr=1156267055
+   62   0.560016    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=197, datalen=64
+   63   0.567224 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=293, datalen=1380
+   64   0.567275 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=294, datalen=1380
+   65   0.564016   23.185.0.4 → 10.128.27.116 TLSv1.3 1396 Application Data
+   66   0.564016   23.185.0.4 → 10.128.27.116 TLSv1.3 1396 Application Data
+   67   0.564016 10.128.27.116 → 23.185.0.4   TCP 68 51992 → 443 [ACK] Seq=805 Ack=14700 Win=63488 Len=0 TSval=2616525703 TSecr=1156267060
+   68   0.564016    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=198, datalen=64
+   69   0.572283 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=295, datalen=1380
+   70   0.572292 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=296, datalen=1380
+   71   0.572415   23.185.0.4 → 10.128.27.116 TLSv1.3 1396 Application Data
+   72   0.572474   23.185.0.4 → 10.128.27.116 TLSv1.3 1396 Application Data
+   73   0.572484 10.128.27.116 → 23.185.0.4   TCP 68 51992 → 443 [ACK] Seq=805 Ack=17356 Win=63488 Len=0 TSval=2616525711 TSecr=1156267064
+   74   0.572016    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=199, datalen=64
+   75   0.576544 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=297, datalen=1380
+   76   0.576652 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=298, datalen=1380
+   77   0.576016   23.185.0.4 → 10.128.27.116 TLSv1.3 1396 Application Data
+   78   0.576016   23.185.0.4 → 10.128.27.116 TLSv1.3 1396 Application Data
+   79   0.576016 10.128.27.116 → 23.185.0.4   TCP 68 51992 → 443 [ACK] Seq=805 Ack=20012 Win=63488 Len=0 TSval=2616525715 TSecr=1156267069
+   80   0.576016    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=200, datalen=64
+   81   0.581502 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=299, datalen=1380
+   82   0.581511 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=300, datalen=1380
+   83   0.580016   23.185.0.4 → 10.128.27.116 TLSv1.3 2724 Application Data, Application Data
+   84   0.580016 10.128.27.116 → 23.185.0.4   TCP 68 51992 → 443 [ACK] Seq=805 Ack=22668 Win=63488 Len=0 TSval=2616525719 TSecr=1156267074
+   85   0.580016    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=201, datalen=64
+   86   0.586489 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=301, datalen=1380
+   87   0.586545 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=302, datalen=1380
+   88   0.584017   23.185.0.4 → 10.128.27.116 TLSv1.3 1396 Application Data
+   89   0.584017   23.185.0.4 → 10.128.27.116 TLSv1.3 1396 Application Data
+   90   0.584017 10.128.27.116 → 23.185.0.4   TCP 68 51992 → 443 [ACK] Seq=805 Ack=25324 Win=63488 Len=0 TSval=2616525723 TSecr=1156267078
+   91   0.584017    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=202, datalen=64
+   92   0.591630 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=303, datalen=1380
+   93   0.591639 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=304, datalen=1380
+   94   0.588017   23.185.0.4 → 10.128.27.116 TLSv1.3 1396 Application Data
+   95   0.588017   23.185.0.4 → 10.128.27.116 TLSv1.3 1396 Application Data
+   96   0.588017 10.128.27.116 → 23.185.0.4   TCP 68 51992 → 443 [ACK] Seq=805 Ack=27980 Win=63488 Len=0 TSval=2616525727 TSecr=1156267083
+   97   0.588017    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=203, datalen=64
+   98   0.596826 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=305, datalen=1380
+   99   0.596882 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=306, datalen=1380
+  100   0.596017   23.185.0.4 → 10.128.27.116 TLSv1.3 1396 Application Data
+  101   0.596017   23.185.0.4 → 10.128.27.116 TLSv1.3 1396 Application Data
+  102   0.596017 10.128.27.116 → 23.185.0.4   TCP 68 51992 → 443 [ACK] Seq=805 Ack=30636 Win=63488 Len=0 TSval=2616525735 TSecr=1156267087
+  103   0.596017    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=204, datalen=64
+  104   0.601708 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=307, datalen=1380
+  105   0.601727 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=308, datalen=1380
+  106   0.596017   23.185.0.4 → 10.128.27.116 TLSv1.3 2724 Application Data, Application Data
+  107   0.596017 10.128.27.116 → 23.185.0.4   TCP 68 51992 → 443 [ACK] Seq=805 Ack=33292 Win=63488 Len=0 TSval=2616525735 TSecr=1156267092
+  108   0.596017    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=205, datalen=64
+  109   0.606463 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=309, datalen=1380
+  110   0.606515 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=310, datalen=1380
+  111   0.600017   23.185.0.4 → 10.128.27.116 TLSv1.3 1396 Application Data
+  112   0.600017   23.185.0.4 → 10.128.27.116 TLSv1.3 1396 Application Data
+  113   0.600017 10.128.27.116 → 23.185.0.4   TCP 68 51992 → 443 [ACK] Seq=805 Ack=35948 Win=63488 Len=0 TSval=2616525739 TSecr=1156267097
+  114   0.604017    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=206, datalen=64
+  115   0.610502 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=311, datalen=1380
+  116   0.610511 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=312, datalen=1380
+  117   0.610812   23.185.0.4 → 10.128.27.116 TLSv1.3 2724 Application Data, Application Data
+  118   0.610833 10.128.27.116 → 23.185.0.4   TCP 68 51992 → 443 [ACK] Seq=805 Ack=38604 Win=63488 Len=0 TSval=2616525750 TSecr=1156267101
+  119   0.608017    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=207, datalen=64
+  120   0.614503 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=313, datalen=1380
+  121   0.614555 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=314, datalen=1380
+  122   0.608017   23.185.0.4 → 10.128.27.116 TLSv1.3 1396 Application Data
+  123   0.608017   23.185.0.4 → 10.128.27.116 TLSv1.3 1396 Application Data
+  124   0.608017 10.128.27.116 → 23.185.0.4   TCP 68 51992 → 443 [ACK] Seq=805 Ack=41260 Win=63488 Len=0 TSval=2616525750 TSecr=1156267106
+  125   0.612017    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=208, datalen=64
+  126   0.690852 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=315, datalen=1380
+  127   0.690866 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=316, datalen=1380
+  128   0.688020   23.185.0.4 → 10.128.27.116 TLSv1.3 1396 Application Data
+  129   0.688020   23.185.0.4 → 10.128.27.116 TLSv1.3 1396 Application Data
+  130   0.688020 10.128.27.116 → 23.185.0.4   TCP 68 51992 → 443 [ACK] Seq=805 Ack=43916 Win=63488 Len=0 TSval=2616525827 TSecr=1156267180
+  131   0.688020    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=209, datalen=64
+  132   0.698516 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=317, datalen=1380
+  133   0.698571 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=318, datalen=1380
+  134   0.696020   23.185.0.4 → 10.128.27.116 TLSv1.3 1396 Application Data
+  135   0.696020   23.185.0.4 → 10.128.27.116 TLSv1.3 1396 Application Data
+  136   0.696020 10.128.27.116 → 23.185.0.4   TCP 68 51992 → 443 [ACK] Seq=805 Ack=46572 Win=69632 Len=0 TSval=2616525835 TSecr=1156267187
+  137   0.696020    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=210, datalen=64
+  138   0.700493 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=319, datalen=1380
+  139   0.700503 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=320, datalen=1380
+  140   0.696020   23.185.0.4 → 10.128.27.116 TLSv1.3 1396 Application Data
+  141   0.696020   23.185.0.4 → 10.128.27.116 TLSv1.3 1396 Application Data
+  142   0.696020 10.128.27.116 → 23.185.0.4   TCP 68 51992 → 443 [ACK] Seq=805 Ack=49228 Win=74880 Len=0 TSval=2616525835 TSecr=1156267189
+  143   0.696020    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=211, datalen=64
+  144   0.704524 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=321, datalen=1380
+  145   0.704574 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=322, datalen=1380
+  146   0.700020   23.185.0.4 → 10.128.27.116 TLSv1.3 1396 Application Data
+  147   0.700020   23.185.0.4 → 10.128.27.116 TLSv1.3 1396 Application Data
+  148   0.700020 10.128.27.116 → 23.185.0.4   TCP 68 51992 → 443 [ACK] Seq=805 Ack=51884 Win=80256 Len=0 TSval=2616525839 TSecr=1156267193
+  149   0.700020    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=212, datalen=64
+  150   0.708506 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=323, datalen=1380
+  151   0.708515 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=324, datalen=1380
+  152   0.708020   23.185.0.4 → 10.128.27.116 TLSv1.3 2724 Application Data, Application Data
+  153   0.708020 10.128.27.116 → 23.185.0.4   TCP 68 51992 → 443 [ACK] Seq=805 Ack=54540 Win=85504 Len=0 TSval=2616525847 TSecr=1156267196
+  154   0.708020    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=213, datalen=64
+  155   0.712741 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=325, datalen=1380
+  156   0.712849 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=326, datalen=1380
+  157   0.712020   23.185.0.4 → 10.128.27.116 TLSv1.3 1396 Application Data
+  158   0.712020   23.185.0.4 → 10.128.27.116 TLSv1.3 1396 Application Data
+  159   0.712020 10.128.27.116 → 23.185.0.4   TCP 68 51992 → 443 [ACK] Seq=805 Ack=57196 Win=90880 Len=0 TSval=2616525851 TSecr=1156267200
+  160   0.712020    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=214, datalen=64
+  161   0.716501 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=327, datalen=1380
+  162   0.716511 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=328, datalen=1380
+  163   0.716020   23.185.0.4 → 10.128.27.116 TLSv1.3 1396 Application Data
+  164   0.716020   23.185.0.4 → 10.128.27.116 TLSv1.3 1396 Application Data
+  165   0.716020 10.128.27.116 → 23.185.0.4   TCP 68 51992 → 443 [ACK] Seq=805 Ack=59852 Win=96128 Len=0 TSval=2616525855 TSecr=1156267203
+  166   0.716020    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=215, datalen=64
+  167   0.719520 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=329, datalen=1380
+  168   0.719576 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=330, datalen=1380
+  169   0.716020   23.185.0.4 → 10.128.27.116 TLSv1.3 1396 Application Data
+  170   0.716020   23.185.0.4 → 10.128.27.116 TLSv1.3 1396 Application Data
+  171   0.716020 10.128.27.116 → 23.185.0.4   TCP 68 51992 → 443 [ACK] Seq=805 Ack=62508 Win=101504 Len=0 TSval=2616525855 TSecr=1156267207
+  172   0.716020    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=216, datalen=64
+  173   0.722512 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=331, datalen=1380
+  174   0.722521 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=332, datalen=1380
+  175   0.716020   23.185.0.4 → 10.128.27.116 TLSv1.3 1396 Application Data
+  176   0.716020   23.185.0.4 → 10.128.27.116 TLSv1.3 1396 Application Data
+  177   0.716020 10.128.27.116 → 23.185.0.4   TCP 68 51992 → 443 [ACK] Seq=805 Ack=65164 Win=106752 Len=0 TSval=2616525855 TSecr=1156267210
+  178   0.720020    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=217, datalen=64
+  179   0.725499 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=333, datalen=1380
+  180   0.725551 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=334, datalen=1380
+  181   0.720020   23.185.0.4 → 10.128.27.116 TLSv1.3 1396 Application Data
+  182   0.720020   23.185.0.4 → 10.128.27.116 TLSv1.3 1396 Application Data
+  183   0.720020 10.128.27.116 → 23.185.0.4   TCP 68 51992 → 443 [ACK] Seq=805 Ack=67820 Win=112128 Len=0 TSval=2616525859 TSecr=1156267213
+  184   0.720020    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=218, datalen=64
+  185   0.728529 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=335, datalen=1380
+  186   0.728539 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=336, datalen=1380
+  187   0.728664   23.185.0.4 → 10.128.27.116 TLSv1.3 1396 Application Data
+  188   0.728727   23.185.0.4 → 10.128.27.116 TLSv1.3 1396 Application Data
+  189   0.728738 10.128.27.116 → 23.185.0.4   TCP 68 51992 → 443 [ACK] Seq=805 Ack=70476 Win=117376 Len=0 TSval=2616525868 TSecr=1156267216
+  190   0.728021    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=219, datalen=64
+  191   0.731529 185.195.233.76 → 10.0.2.15    WireGuard 460 Transport Data, receiver=0x0975D3B5, counter=337, datalen=384
+  192   0.731581 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=338, datalen=1380
+  193   0.731636 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=339, datalen=1380
+  194   0.728021   23.185.0.4 → 10.128.27.116 TLSv1.3 389 Application Data
+  195   0.728021   23.185.0.4 → 10.128.27.116 TCP 2724 [TCP segment of a reassembled PDU]
+  196   0.728021 10.128.27.116 → 23.185.0.4   TCP 68 51992 → 443 [ACK] Seq=805 Ack=73453 Win=125312 Len=0 TSval=2616525868 TSecr=1156267219
+  197   0.728021    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=220, datalen=64
+  198   0.734473 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=340, datalen=1380
+  199   0.734525 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=341, datalen=1380
+  200   0.728021   23.185.0.4 → 10.128.27.116 TCP 1396 443 → 51992 [ACK] Seq=73453 Ack=805 Win=145920 Len=1328 TSval=1156267222 TSecr=2616525727 [TCP segment of a reassembled PDU]
+  201   0.728021   23.185.0.4 → 10.128.27.116 TCP 1396 443 → 51992 [PSH, ACK] Seq=74781 Ack=805 Win=145920 Len=1328 TSval=1156267222 TSecr=2616525727 [TCP segment of a reassembled PDU]
+  202   0.728021 10.128.27.116 → 23.185.0.4   TCP 68 51992 → 443 [ACK] Seq=805 Ack=76109 Win=130688 Len=0 TSval=2616525868 TSecr=1156267222
+  203   0.728021    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=221, datalen=64
+  204   0.736646 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=342, datalen=1380
+  205   0.732021   23.185.0.4 → 10.128.27.116 TCP 1396 443 → 51992 [ACK] Seq=76109 Ack=805 Win=145920 Len=1328 TSval=1156267224 TSecr=2616525727 [TCP segment of a reassembled PDU]
+  206   0.737453 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=343, datalen=1380
+  207   0.737587   23.185.0.4 → 10.128.27.116 TCP 1396 443 → 51992 [PSH, ACK] Seq=77437 Ack=805 Win=145920 Len=1328 TSval=1156267224 TSecr=2616525727 [TCP segment of a reassembled PDU]
+  208   0.737595 10.128.27.116 → 23.185.0.4   TCP 68 51992 → 443 [ACK] Seq=805 Ack=78765 Win=135936 Len=0 TSval=2616525876 TSecr=1156267224
+  209   0.732021    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=222, datalen=64
+  210   0.739717 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=344, datalen=1380
+  211   0.739769 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=345, datalen=1380
+  212   0.736021   23.185.0.4 → 10.128.27.116 TCP 1396 443 → 51992 [ACK] Seq=78765 Ack=805 Win=145920 Len=1328 TSval=1156267227 TSecr=2616525735 [TCP segment of a reassembled PDU]
+  213   0.736021   23.185.0.4 → 10.128.27.116 TCP 1396 443 → 51992 [PSH, ACK] Seq=80093 Ack=805 Win=145920 Len=1328 TSval=1156267227 TSecr=2616525735 [TCP segment of a reassembled PDU]
+  214   0.736021 10.128.27.116 → 23.185.0.4   TCP 68 51992 → 443 [ACK] Seq=805 Ack=81421 Win=141312 Len=0 TSval=2616525876 TSecr=1156267227
+  215   0.736021    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=223, datalen=64
+  216   0.742506 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=346, datalen=1380
+  217   0.742558 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=347, datalen=1380
+  218   0.736021   23.185.0.4 → 10.128.27.116 TCP 1396 443 → 51992 [ACK] Seq=81421 Ack=805 Win=145920 Len=1328 TSval=1156267229 TSecr=2616525735 [TCP segment of a reassembled PDU]
+  219   0.736021   23.185.0.4 → 10.128.27.116 TCP 1396 443 → 51992 [PSH, ACK] Seq=82749 Ack=805 Win=145920 Len=1328 TSval=1156267229 TSecr=2616525735 [TCP segment of a reassembled PDU]
+  220   0.736021 10.128.27.116 → 23.185.0.4   TCP 68 51992 → 443 [ACK] Seq=805 Ack=84077 Win=146560 Len=0 TSval=2616525876 TSecr=1156267229
+  221   0.736021    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=224, datalen=64
+  222   0.745486 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=348, datalen=1380
+  223   0.745538 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=349, datalen=1380
+  224   0.740021   23.185.0.4 → 10.128.27.116 TCP 1396 443 → 51992 [ACK] Seq=84077 Ack=805 Win=145920 Len=1328 TSval=1156267232 TSecr=2616525735 [TCP segment of a reassembled PDU]
+  225   0.740021   23.185.0.4 → 10.128.27.116 TCP 1396 443 → 51992 [PSH, ACK] Seq=85405 Ack=805 Win=145920 Len=1328 TSval=1156267232 TSecr=2616525735 [TCP segment of a reassembled PDU]
+  226   0.740021 10.128.27.116 → 23.185.0.4   TCP 68 51992 → 443 [ACK] Seq=805 Ack=86733 Win=151936 Len=0 TSval=2616525879 TSecr=1156267232
+  227   0.740021    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=225, datalen=64
+  228   0.747536 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=350, datalen=1380
+  229   0.747592 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=351, datalen=1380
+  230   0.744021   23.185.0.4 → 10.128.27.116 TLSv1.3 1396 Application Data [TCP segment of a reassembled PDU]
+  231   0.744021   23.185.0.4 → 10.128.27.116 TCP 1396 443 → 51992 [PSH, ACK] Seq=88061 Ack=805 Win=145920 Len=1328 TSval=1156267235 TSecr=2616525735 [TCP segment of a reassembled PDU]
+  232   0.744021 10.128.27.116 → 23.185.0.4   TCP 68 51992 → 443 [ACK] Seq=805 Ack=89389 Win=157184 Len=0 TSval=2616525883 TSecr=1156267235
+  233   0.744021    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=226, datalen=64
+  234   0.750493 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=352, datalen=1380
+  235   0.750544 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=353, datalen=1380
+  236   0.744021   23.185.0.4 → 10.128.27.116 TCP 1396 443 → 51992 [ACK] Seq=89389 Ack=805 Win=145920 Len=1328 TSval=1156267237 TSecr=2616525739 [TCP segment of a reassembled PDU]
+  237   0.744021   23.185.0.4 → 10.128.27.116 TCP 1396 443 → 51992 [PSH, ACK] Seq=90717 Ack=805 Win=145920 Len=1328 TSval=1156267237 TSecr=2616525739 [TCP segment of a reassembled PDU]
+  238   0.744021 10.128.27.116 → 23.185.0.4   TCP 68 51992 → 443 [ACK] Seq=805 Ack=92045 Win=162560 Len=0 TSval=2616525883 TSecr=1156267237
+  239   0.744021    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=227, datalen=64
+  240   0.756844 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=354, datalen=1380
+  241   0.756944 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=355, datalen=1380
+  242   0.756953 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=356, datalen=1380
+  243   0.757004 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=357, datalen=1380
+  244   0.757061 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=358, datalen=1380
+  245   0.757067 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=359, datalen=1380
+  246   0.756022   23.185.0.4 → 10.128.27.116 TCP 1396 443 → 51992 [ACK] Seq=92045 Ack=805 Win=145920 Len=1328 TSval=1156267239 TSecr=2616525750 [TCP segment of a reassembled PDU]
+  247   0.756022   23.185.0.4 → 10.128.27.116 TCP 1396 443 → 51992 [PSH, ACK] Seq=93373 Ack=805 Win=145920 Len=1328 TSval=1156267239 TSecr=2616525750 [TCP segment of a reassembled PDU]
+  248   0.756022   23.185.0.4 → 10.128.27.116 TCP 2724 443 → 51992 [PSH, ACK] Seq=94701 Ack=805 Win=145920 Len=2656 TSval=1156267242 TSecr=2616525750 [TCP segment of a reassembled PDU]
+  249   0.756022   23.185.0.4 → 10.128.27.116 TCP 2724 443 → 51992 [PSH, ACK] Seq=97357 Ack=805 Win=145920 Len=2656 TSval=1156267244 TSecr=2616525750 [TCP segment of a reassembled PDU]
+  250   0.756022 10.128.27.116 → 23.185.0.4   TCP 68 51992 → 443 [ACK] Seq=805 Ack=94701 Win=167808 Len=0 TSval=2616525895 TSecr=1156267239
+  251   0.756022 10.128.27.116 → 23.185.0.4   TCP 68 51992 → 443 [ACK] Seq=805 Ack=97357 Win=173184 Len=0 TSval=2616525895 TSecr=1156267242
+  252   0.756022 10.128.27.116 → 23.185.0.4   TCP 68 51992 → 443 [ACK] Seq=805 Ack=100013 Win=178432 Len=0 TSval=2616525895 TSecr=1156267244
+  253   0.756022    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=228, datalen=64
+  254   0.756022    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=229, datalen=64
+  255   0.756022    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=230, datalen=64
+  256   0.758790 185.195.233.76 → 10.0.2.15    WireGuard 1456 Transport Data, receiver=0x0975D3B5, counter=360, datalen=1380
+  257   0.758842 185.195.233.76 → 10.0.2.15    WireGuard 572 Transport Data, receiver=0x0975D3B5, counter=361, datalen=496
+  258   0.756022   23.185.0.4 → 10.128.27.116 TCP 1396 443 → 51992 [ACK] Seq=100013 Ack=805 Win=145920 Len=1328 TSval=1156267246 TSecr=2616525750 [TCP segment of a reassembled PDU]
+  259   0.756022   23.185.0.4 → 10.128.27.116 TLSv1.3 511 Application Data
+  260   0.756022 10.128.27.116 → 23.185.0.4   TCP 68 51992 → 443 [ACK] Seq=805 Ack=101784 Win=183808 Len=0 TSval=2616525895 TSecr=1156267246
+  261   0.756022    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=231, datalen=64
+  262   0.756022 10.128.27.116 → 23.185.0.4   TLSv1.3 92 Application Data
+  263   0.756022 10.128.27.116 → 23.185.0.4   TCP 68 51992 → 443 [FIN, ACK] Seq=829 Ack=101784 Win=183808 Len=0 TSval=2616525895 TSecr=1156267246
+  264   0.756022    10.0.2.15 → 185.195.233.76 WireGuard 156 Transport Data, receiver=0x781D81D2, counter=232, datalen=80
+  265   0.756022    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=233, datalen=64
+  266   0.897607 185.195.233.76 → 10.0.2.15    WireGuard 140 Transport Data, receiver=0x0975D3B5, counter=362, datalen=64
+  267   0.897659 185.195.233.76 → 10.0.2.15    WireGuard 156 Transport Data, receiver=0x0975D3B5, counter=363, datalen=80
+  268   0.897666 185.195.233.76 → 10.0.2.15    WireGuard 140 Transport Data, receiver=0x0975D3B5, counter=364, datalen=64
+  269   0.897668 185.195.233.76 → 10.0.2.15    WireGuard 140 Transport Data, receiver=0x0975D3B5, counter=365, datalen=64
+  270   0.896026   23.185.0.4 → 10.128.27.116 TCP 68 443 → 51992 [ACK] Seq=101784 Ack=829 Win=145920 Len=0 TSval=1156267383 TSecr=2616525895
+  271   0.896026   23.185.0.4 → 10.128.27.116 TLSv1.3 92 Application Data
+  272   0.896026   23.185.0.4 → 10.128.27.116 TCP 68 443 → 51992 [FIN, ACK] Seq=101808 Ack=829 Win=145920 Len=0 TSval=1156267383 TSecr=2616525895
+  273   0.896026   23.185.0.4 → 10.128.27.116 TCP 68 443 → 51992 [ACK] Seq=101809 Ack=830 Win=145920 Len=0 TSval=1156267384 TSecr=2616525895
+  274   0.896026 10.128.27.116 → 23.185.0.4   TCP 56 51992 → 443 [RST] Seq=829 Win=0 Len=0
+  275   0.896026    10.0.2.15 → 185.195.233.76 WireGuard 124 Transport Data, receiver=0x781D81D2, counter=234, datalen=48
+  276   6.524187 PcsCompu_ed:ac:df →              ARP 44 Who has 10.0.2.2? Tell 10.0.2.15
+  277   6.525567 52:55:0a:00:02:02 →              ARP 66 10.0.2.2 is at 52:55:0a:00:02:02
+  278   6.525768 10.128.27.116 → 10.64.0.1    ICMP 86 Echo (ping) request  id=0x8f66, seq=113/28928, ttl=64
+  279   6.524187    10.0.2.15 → 185.195.233.76 WireGuard 156 Transport Data, receiver=0x781D81D2, counter=235, datalen=80
+  280   6.655165 185.195.233.76 → 10.0.2.15    WireGuard 156 Transport Data, receiver=0x0975D3B5, counter=366, datalen=80
+  281   6.648190    10.64.0.1 → 10.128.27.116 ICMP 86 Echo (ping) reply    id=0x8f66, seq=113/28928, ttl=64 (request in 278)
+  282   7.540216 10.128.27.116 → 212.83.154.33 TCP 76 41608 → 8443 [SYN] Seq=0 Win=64320 Len=0 MSS=1340 SACK_PERM=1 TSval=3283834829 TSecr=0 WS=128
+  283   7.540216    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=236, datalen=64
+  284   7.689573 185.195.233.76 → 10.0.2.15    WireGuard 140 Transport Data, receiver=0x0975D3B5, counter=367, datalen=64
+  285   7.690164 212.83.154.33 → 10.128.27.116 TCP 76 8443 → 41608 [SYN, ACK] Seq=0 Ack=1 Win=65160 Len=0 MSS=1340 SACK_PERM=1 TSval=3297061172 TSecr=3283834829 WS=128
+  286   7.690249 10.128.27.116 → 212.83.154.33 TCP 68 41608 → 8443 [ACK] Seq=1 Ack=1 Win=64384 Len=0 TSval=3283834979 TSecr=3297061172
+  287   7.688220    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=237, datalen=64
+  288   7.688220 10.128.27.116 → 212.83.154.33 TLSv1 391 Client Hello
+  289   7.688220    10.0.2.15 → 185.195.233.76 WireGuard 460 Transport Data, receiver=0x781D81D2, counter=238, datalen=384

@@ -1,0 +1,16 @@
+    1   0.000000 185.195.233.76 → 10.0.2.15    WireGuard 156 Transport Data, receiver=0x9BD0589B, counter=68, datalen=80
+    2   0.000105    10.64.0.1 → 10.128.27.116 ICMP 86 Echo (ping) reply    id=0x8f66, seq=71/18176, ttl=64
+    3   2.719790 10.128.27.116 → 10.64.0.1    DNS 73 Standard query 0xc38a A web.mit.edu
+    4   2.719790 10.128.27.116 → 10.64.0.1    DNS 73 Standard query 0xc38a AAAA web.mit.edu
+    5   2.719790    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x3CCC4E66, counter=47, datalen=64
+    6   2.731790    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x3CCC4E66, counter=48, datalen=64
+    7   2.976674 185.195.233.76 → 10.0.2.15    WireGuard 268 Transport Data, receiver=0x9BD0589B, counter=69, datalen=192
+    8   2.975792    10.64.0.1 → 10.128.27.116 DNS 202 Standard query response 0xc38a AAAA web.mit.edu CNAME www.mit.edu.edgekey.net CNAME e9566.dscb.akamaiedge.net AAAA 2a02:26f0:e80:590::255e AAAA 2a02:26f0:e80:589::255e
+    9   2.989836 185.195.233.76 → 10.0.2.15    WireGuard 236 Transport Data, receiver=0x9BD0589B, counter=70, datalen=160
+   10   2.975792    10.64.0.1 → 10.128.27.116 DNS 162 Standard query response 0xc38a A web.mit.edu CNAME www.mit.edu.edgekey.net CNAME e9566.dscb.akamaiedge.net A 88.221.97.35
+   11   7.863839 10.128.27.116 → 10.64.0.1    DNS 73 Standard query 0xc38a A web.mit.edu
+   12   7.863839    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x3CCC4E66, counter=49, datalen=64
+   13   8.011656 185.195.233.76 → 10.0.2.15    WireGuard 236 Transport Data, receiver=0x9BD0589B, counter=71, datalen=160
+   14   8.007840    10.64.0.1 → 10.128.27.116 DNS 162 Standard query response 0xc38a A web.mit.edu CNAME www.mit.edu.edgekey.net CNAME e9566.dscb.akamaiedge.net A 88.221.97.35
+   15   8.007840 10.128.27.116 → 10.64.0.1    ICMP 190 Destination unreachable (Port unreachable)
+   16   8.007840    10.0.2.15 → 185.195.233.76 WireGuard 252 Transport Data, receiver=0x3CCC4E66, counter=50, datalen=176

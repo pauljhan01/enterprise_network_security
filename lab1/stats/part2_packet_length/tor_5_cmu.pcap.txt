@@ -1,0 +1,19 @@
+    1   0.000000 fd17:625c:f037:2:773e:99b1:f2ef:b28a → 2620:2d:4002:1::198 TCP 96 55408 → 80 [SYN] Seq=0 Win=64800 Len=0 MSS=1440 SACK_PERM=1 TSval=4205318247 TSecr=0 WS=128
+    2   1.584318 2620:2d:4002:1::198 → fd17:625c:f037:2:773e:99b1:f2ef:b28a TCP 80 80 → 55408 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1440
+    3   1.584393 fd17:625c:f037:2:773e:99b1:f2ef:b28a → 2620:2d:4002:1::198 TCP 76 55408 → 80 [ACK] Seq=1 Ack=1 Win=64800 Len=0
+    4   1.579980 fd17:625c:f037:2:773e:99b1:f2ef:b28a → 2620:2d:4002:1::198 HTTP 163 GET / HTTP/1.1 
+    5   1.584809 2620:2d:4002:1::198 → fd17:625c:f037:2:773e:99b1:f2ef:b28a TCP 76 80 → 55408 [ACK] Seq=1 Ack=88 Win=65535 Len=0
+    6   1.630139 2620:2d:4002:1::198 → fd17:625c:f037:2:773e:99b1:f2ef:b28a TCP 76 80 → 55408 [RST, ACK] Seq=1 Ack=88 Win=65535 Len=0
+    7   1.633116 fd17:625c:f037:2:773e:99b1:f2ef:b28a → 2620:2d:4000:1::2a TCP 96 57616 → 80 [SYN] Seq=0 Win=64800 Len=0 MSS=1440 SACK_PERM=1 TSval=2756613430 TSecr=0 WS=128
+    8   1.643979 fe80::fe40:8b75:e8ac:e9ce → ff02::16     ICMPv6 152 Multicast Listener Report Message v2
+    9   1.746263 2620:2d:4000:1::2a → fd17:625c:f037:2:773e:99b1:f2ef:b28a TCP 80 80 → 57616 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1440
+   10   1.746342 fd17:625c:f037:2:773e:99b1:f2ef:b28a → 2620:2d:4000:1::2a TCP 76 57616 → 80 [ACK] Seq=1 Ack=1 Win=64800 Len=0
+   11   1.731978 fd17:625c:f037:2:773e:99b1:f2ef:b28a → 2620:2d:4000:1::2a HTTP 163 GET / HTTP/1.1 
+   12   1.746826 2620:2d:4000:1::2a → fd17:625c:f037:2:773e:99b1:f2ef:b28a TCP 76 80 → 57616 [ACK] Seq=1 Ack=88 Win=65535 Len=0
+   13   1.866270 2620:2d:4000:1::2a → fd17:625c:f037:2:773e:99b1:f2ef:b28a HTTP 265 HTTP/1.1 204 No Content 
+   14   1.866270 2620:2d:4000:1::2a → fd17:625c:f037:2:773e:99b1:f2ef:b28a TCP 76 80 → 57616 [FIN, ACK] Seq=190 Ack=88 Win=65535 Len=0
+   15   1.866280 fd17:625c:f037:2:773e:99b1:f2ef:b28a → 2620:2d:4000:1::2a TCP 76 57616 → 80 [ACK] Seq=88 Ack=190 Win=64611 Len=0
+   16   1.866767 fd17:625c:f037:2:773e:99b1:f2ef:b28a → 2620:2d:4000:1::2a TCP 76 57616 → 80 [FIN, ACK] Seq=88 Ack=191 Win=64610 Len=0
+   17   1.867196 2620:2d:4000:1::2a → fd17:625c:f037:2:773e:99b1:f2ef:b28a TCP 76 80 → 57616 [ACK] Seq=191 Ack=89 Win=65535 Len=0
+   18   1.877917 fe80::fe40:8b75:e8ac:e9ce → ff02::16     ICMPv6 152 Multicast Listener Report Message v2
+   19   2.252578 fe80::fe40:8b75:e8ac:e9ce → ff02::16     ICMPv6 152 Multicast Listener Report Message v2

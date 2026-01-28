@@ -1,0 +1,34 @@
+    1   0.000000 PcsCompu_ed:ac:df →              ARP 44 Who has 10.0.2.2? Tell 10.0.2.15
+    2   0.004153 52:55:0a:00:02:02 →              ARP 66 10.0.2.2 is at 52:55:0a:00:02:02
+    3   1.728948 10.128.27.116 → 10.64.0.1    ICMP 86 Echo (ping) request  id=0x8f66, seq=85/21760, ttl=64
+    4   1.724037    10.0.2.15 → 185.195.233.76 WireGuard 156 Transport Data, receiver=0x90DDF161, counter=431, datalen=80
+    5   1.872570 185.195.233.76 → 10.0.2.15    WireGuard 156 Transport Data, receiver=0xD1C3ADF8, counter=785, datalen=80
+    6   1.872040    10.64.0.1 → 10.128.27.116 ICMP 86 Echo (ping) reply    id=0x8f66, seq=85/21760, ttl=64 (request in 3)
+    7   2.700058 10.128.27.116 → 10.64.0.1    DNS 73 Standard query 0x03c6 A www.unm.edu
+    8   2.700058 10.128.27.116 → 10.64.0.1    DNS 73 Standard query 0x03c6 AAAA www.unm.edu
+    9   2.700058    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x90DDF161, counter=432, datalen=64
+   10   2.700058    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x90DDF161, counter=433, datalen=64
+   11   2.849678 185.195.233.76 → 10.0.2.15    WireGuard 172 Transport Data, receiver=0xD1C3ADF8, counter=786, datalen=96
+   12   2.849796 185.195.233.76 → 10.0.2.15    WireGuard 220 Transport Data, receiver=0xD1C3ADF8, counter=787, datalen=144
+   13   2.848061    10.64.0.1 → 10.128.27.116 DNS 109 Standard query response 0x03c6 A www.unm.edu CNAME wwwvs.unm.edu A 129.24.172.124
+   14   2.848061    10.64.0.1 → 10.128.27.116 DNS 146 Standard query response 0x03c6 AAAA www.unm.edu CNAME wwwvs.unm.edu SOA ns1.unm.edu
+   15   2.850518 10.128.27.116 → 129.24.172.124 TCP 76 44816 → 80 [SYN] Seq=0 Win=64320 Len=0 MSS=1340 SACK_PERM=1 TSval=2950114175 TSecr=0 WS=128
+   16   2.848061    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x90DDF161, counter=434, datalen=64
+   17   3.164274 185.195.233.76 → 10.0.2.15    WireGuard 140 Transport Data, receiver=0xD1C3ADF8, counter=788, datalen=64
+   18   3.164403 129.24.172.124 → 10.128.27.116 TCP 72 80 → 44816 [SYN, ACK] Seq=0 Ack=1 Win=4020 Len=0 MSS=1340 SACK_PERM=1 TSval=4248166204 TSecr=2950114175
+   19   3.164481 10.128.27.116 → 129.24.172.124 TCP 68 44816 → 80 [ACK] Seq=1 Ack=1 Win=64320 Len=0 TSval=2950114489 TSecr=4248166204
+   20   3.164068 10.128.27.116 → 129.24.172.124 HTTP 143 GET / HTTP/1.1 
+   21   3.164068    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x90DDF161, counter=435, datalen=64
+   22   3.164068    10.0.2.15 → 185.195.233.76 WireGuard 204 Transport Data, receiver=0x90DDF161, counter=436, datalen=128
+   23   3.480638 185.195.233.76 → 10.0.2.15    WireGuard 252 Transport Data, receiver=0xD1C3ADF8, counter=789, datalen=176
+   24   3.480075 129.24.172.124 → 10.128.27.116 HTTP 192 HTTP/1.0 302 Moved Temporarily 
+   25   3.480075 10.128.27.116 → 129.24.172.124 TCP 68 44816 → 80 [ACK] Seq=76 Ack=125 Win=64196 Len=0 TSval=2950114805 TSecr=4248166519
+   26   3.481189 10.128.27.116 → 129.24.172.124 TCP 68 44816 → 80 [FIN, ACK] Seq=76 Ack=125 Win=64196 Len=0 TSval=2950114806 TSecr=4248166519
+   27   3.480075    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x90DDF161, counter=437, datalen=64
+   28   3.480075    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x90DDF161, counter=438, datalen=64
+   29   3.795390 185.195.233.76 → 10.0.2.15    WireGuard 140 Transport Data, receiver=0xD1C3ADF8, counter=790, datalen=64
+   30   3.795461 185.195.233.76 → 10.0.2.15    WireGuard 140 Transport Data, receiver=0xD1C3ADF8, counter=791, datalen=64
+   31   3.792081 129.24.172.124 → 10.128.27.116 TCP 68 80 → 44816 [ACK] Seq=125 Ack=77 Win=4095 Len=0 TSval=4248166834 TSecr=2950114806
+   32   3.792081 129.24.172.124 → 10.128.27.116 TCP 68 80 → 44816 [FIN, ACK] Seq=125 Ack=77 Win=4095 Len=0 TSval=4248166834 TSecr=2950114806
+   33   3.792081 10.128.27.116 → 129.24.172.124 TCP 68 44816 → 80 [ACK] Seq=77 Ack=126 Win=64196 Len=0 TSval=2950115117 TSecr=4248166834
+   34   3.792081    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x90DDF161, counter=439, datalen=64

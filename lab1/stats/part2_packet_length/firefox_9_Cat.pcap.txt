@@ -1,0 +1,125 @@
+    1   0.000000    127.0.0.1 → 127.0.0.53   DNS 88 Standard query 0x8495 A mozilla.cloudflare-dns.com
+    2   0.000000    10.0.2.15 → 192.168.1.254 DNS 99 Standard query 0x98ef A mozilla.cloudflare-dns.com OPT
+    3   0.000000    127.0.0.1 → 127.0.0.53   DNS 88 Standard query 0x8495 AAAA mozilla.cloudflare-dns.com
+    4   0.000000   127.0.0.53 → 127.0.0.1    DNS 144 Standard query response 0x8495 AAAA mozilla.cloudflare-dns.com AAAA 2803:f800:53::4 AAAA 2a06:98c1:52::4
+    5   0.019714 192.168.1.254 → 10.0.2.15    DNS 131 Standard query response 0x98ef A mozilla.cloudflare-dns.com A 172.64.41.4 A 162.159.61.4 OPT
+    6   0.012000   127.0.0.53 → 127.0.0.1    DNS 120 Standard query response 0x8495 A mozilla.cloudflare-dns.com A 172.64.41.4 A 162.159.61.4
+    7   3.047911    127.0.0.1 → 127.0.0.53   DNS 97 Standard query 0xa06a A content-signature-2.cdn.mozilla.net
+    8   3.047911    127.0.0.1 → 127.0.0.53   DNS 97 Standard query 0xa06a AAAA content-signature-2.cdn.mozilla.net
+    9   3.047911    10.0.2.15 → 192.168.1.254 DNS 108 Standard query 0x290d A content-signature-2.cdn.mozilla.net OPT
+   10   3.047911    10.0.2.15 → 192.168.1.254 DNS 108 Standard query 0x3ea4 AAAA content-signature-2.cdn.mozilla.net OPT
+   11   3.064937 192.168.1.254 → 10.0.2.15    DNS 124 Standard query response 0x290d A content-signature-2.cdn.mozilla.net A 34.160.144.191 OPT
+   12   3.063910   127.0.0.53 → 127.0.0.1    DNS 113 Standard query response 0xa06a A content-signature-2.cdn.mozilla.net A 34.160.144.191
+   13   3.067681 192.168.1.254 → 10.0.2.15    DNS 136 Standard query response 0x3ea4 AAAA content-signature-2.cdn.mozilla.net AAAA 2600:1901:0:92a9:: OPT
+   14   3.063910   127.0.0.53 → 127.0.0.1    DNS 125 Standard query response 0xa06a AAAA content-signature-2.cdn.mozilla.net AAAA 2600:1901:0:92a9::
+   15   5.003853    127.0.0.1 → 127.0.0.53   DNS 88 Standard query 0x8495 A mozilla.cloudflare-dns.com
+   16   5.003853   127.0.0.53 → 127.0.0.1    DNS 120 Standard query response 0x8495 A mozilla.cloudflare-dns.com A 162.159.61.4 A 172.64.41.4
+   17   5.003853    127.0.0.1 → 127.0.0.53   DNS 88 Standard query 0x8495 AAAA mozilla.cloudflare-dns.com
+   18   5.003853   127.0.0.53 → 127.0.0.1    DNS 144 Standard query response 0x8495 AAAA mozilla.cloudflare-dns.com AAAA 2803:f800:53::4 AAAA 2a06:98c1:52::4
+   19   5.003853    10.0.2.15 → 162.159.61.4 TCP 76 33346 → 443 [SYN] Seq=0 Win=64240 Len=0 MSS=1460 SACK_PERM=1 TSval=3719854578 TSecr=0 WS=128
+   20   5.007853    10.0.2.15 → 162.159.61.4 TCP 76 33362 → 443 [SYN] Seq=0 Win=64240 Len=0 MSS=1460 SACK_PERM=1 TSval=3719854582 TSecr=0 WS=128
+   21   5.007853    10.0.2.15 → 162.159.61.4 TCP 76 33368 → 443 [SYN] Seq=0 Win=64240 Len=0 MSS=1460 SACK_PERM=1 TSval=3719854582 TSecr=0 WS=128
+   22   5.007853    10.0.2.15 → 162.159.61.4 TCP 76 33372 → 443 [SYN] Seq=0 Win=64240 Len=0 MSS=1460 SACK_PERM=1 TSval=3719854582 TSecr=0 WS=128
+   23   5.007853    10.0.2.15 → 162.159.61.4 TCP 76 33378 → 443 [SYN] Seq=0 Win=64240 Len=0 MSS=1460 SACK_PERM=1 TSval=3719854582 TSecr=0 WS=128
+   24   5.022801 162.159.61.4 → 10.0.2.15    TCP 62 443 → 33368 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1460
+   25   5.022875    10.0.2.15 → 162.159.61.4 TCP 56 33368 → 443 [ACK] Seq=1 Ack=1 Win=64240 Len=0
+   26   5.022967 162.159.61.4 → 10.0.2.15    TCP 62 443 → 33378 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1460
+   27   5.022981    10.0.2.15 → 162.159.61.4 TCP 56 33378 → 443 [ACK] Seq=1 Ack=1 Win=64240 Len=0
+   28   5.023068 162.159.61.4 → 10.0.2.15    TCP 62 443 → 33362 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1460
+   29   5.023081    10.0.2.15 → 162.159.61.4 TCP 56 33362 → 443 [ACK] Seq=1 Ack=1 Win=64240 Len=0
+   30   5.023561 162.159.61.4 → 10.0.2.15    TCP 62 443 → 33372 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1460
+   31   5.023574    10.0.2.15 → 162.159.61.4 TCP 56 33372 → 443 [ACK] Seq=1 Ack=1 Win=64240 Len=0
+   32   5.023665    10.0.2.15 → 162.159.61.4 TLSv1 1967 Client Hello
+   33   5.023755 162.159.61.4 → 10.0.2.15    TCP 62 443 → 33346 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1460
+   34   5.023768    10.0.2.15 → 162.159.61.4 TCP 56 33346 → 443 [ACK] Seq=1 Ack=1 Win=64240 Len=0
+   35   5.007853    10.0.2.15 → 162.159.61.4 TLSv1 1967 Client Hello
+   36   5.024243 162.159.61.4 → 10.0.2.15    TCP 62 443 → 33378 [ACK] Seq=1 Ack=1461 Win=65535 Len=0
+   37   5.024251 162.159.61.4 → 10.0.2.15    TCP 62 443 → 33378 [ACK] Seq=1 Ack=1912 Win=65535 Len=0
+   38   5.024253 162.159.61.4 → 10.0.2.15    TCP 62 443 → 33368 [ACK] Seq=1 Ack=1461 Win=65535 Len=0
+   39   5.024255 162.159.61.4 → 10.0.2.15    TCP 62 443 → 33368 [ACK] Seq=1 Ack=1912 Win=65535 Len=0
+   40   5.007853    10.0.2.15 → 162.159.61.4 TLSv1 1967 Client Hello
+   41   5.025156 162.159.61.4 → 10.0.2.15    TCP 62 443 → 33362 [ACK] Seq=1 Ack=1461 Win=65535 Len=0
+   42   5.025166 162.159.61.4 → 10.0.2.15    TCP 62 443 → 33362 [ACK] Seq=1 Ack=1912 Win=65535 Len=0
+   43   5.007853    10.0.2.15 → 162.159.61.4 TLSv1 1967 Client Hello
+   44   5.025527 162.159.61.4 → 10.0.2.15    TCP 62 443 → 33372 [ACK] Seq=1 Ack=1461 Win=65535 Len=0
+   45   5.025535 162.159.61.4 → 10.0.2.15    TCP 62 443 → 33372 [ACK] Seq=1 Ack=1912 Win=65535 Len=0
+   46   5.007853    10.0.2.15 → 162.159.61.4 TLSv1 1967 Client Hello
+   47   5.026193 162.159.61.4 → 10.0.2.15    TCP 62 443 → 33346 [ACK] Seq=1 Ack=1461 Win=65535 Len=0
+   48   5.026201 162.159.61.4 → 10.0.2.15    TCP 62 443 → 33346 [ACK] Seq=1 Ack=1912 Win=65535 Len=0
+   49   5.040619 162.159.61.4 → 10.0.2.15    TLSv1.3 2936 Server Hello, Change Cipher Spec
+   50   5.040630    10.0.2.15 → 162.159.61.4 TCP 56 33378 → 443 [ACK] Seq=1912 Ack=2881 Win=63360 Len=0
+   51   5.041156 162.159.61.4 → 10.0.2.15    TLSv1.3 648 Application Data
+   52   5.041164    10.0.2.15 → 162.159.61.4 TCP 56 33378 → 443 [ACK] Seq=1912 Ack=3473 Win=63360 Len=0
+   53   5.042076 162.159.61.4 → 10.0.2.15    TLSv1.3 1516 Server Hello, Change Cipher Spec
+   54   5.042084    10.0.2.15 → 162.159.61.4 TCP 56 33368 → 443 [ACK] Seq=1912 Ack=1461 Win=63360 Len=0
+   55   5.043111 162.159.61.4 → 10.0.2.15    TLSv1.3 2069 Application Data
+   56   5.043121    10.0.2.15 → 162.159.61.4 TCP 56 33368 → 443 [ACK] Seq=1912 Ack=3474 Win=63360 Len=0
+   57   5.044126 162.159.61.4 → 10.0.2.15    TLSv1.3 2936 Server Hello, Change Cipher Spec
+   58   5.044134    10.0.2.15 → 162.159.61.4 TCP 56 33362 → 443 [ACK] Seq=1912 Ack=2881 Win=63360 Len=0
+   59   5.044571 162.159.61.4 → 10.0.2.15    TLSv1.3 648 Application Data
+   60   5.044579    10.0.2.15 → 162.159.61.4 TCP 56 33362 → 443 [ACK] Seq=1912 Ack=3473 Win=63360 Len=0
+   61   5.039852    10.0.2.15 → 162.159.61.4 TLSv1.3 120 Change Cipher Spec, Application Data
+   62   5.039852    10.0.2.15 → 162.159.61.4 TLSv1.3 120 Change Cipher Spec, Application Data
+   63   5.045571 162.159.61.4 → 10.0.2.15    TCP 62 443 → 33368 [ACK] Seq=3474 Ack=1976 Win=65535 Len=0
+   64   5.039852    10.0.2.15 → 162.159.61.4 TLSv1.3 120 Change Cipher Spec, Application Data
+   65   5.045908 162.159.61.4 → 10.0.2.15    TCP 62 443 → 33378 [ACK] Seq=3473 Ack=1976 Win=65535 Len=0
+   66   5.045915 162.159.61.4 → 10.0.2.15    TCP 62 443 → 33362 [ACK] Seq=3473 Ack=1976 Win=65535 Len=0
+   67   5.039852    10.0.2.15 → 162.159.61.4 TLSv1.3 165 Application Data
+   68   5.039852    10.0.2.15 → 162.159.61.4 TLSv1.3 148 Application Data
+   69   5.039852    10.0.2.15 → 162.159.61.4 TLSv1.3 165 Application Data
+   70   5.046865 162.159.61.4 → 10.0.2.15    TCP 62 443 → 33378 [ACK] Seq=3473 Ack=2085 Win=65535 Len=0
+   71   5.046872 162.159.61.4 → 10.0.2.15    TCP 62 443 → 33368 [ACK] Seq=3474 Ack=2068 Win=65535 Len=0
+   72   5.046873 162.159.61.4 → 10.0.2.15    TCP 62 443 → 33362 [ACK] Seq=3473 Ack=2085 Win=65535 Len=0
+   73   5.047914 162.159.61.4 → 10.0.2.15    TLSv1.3 1516 Server Hello, Change Cipher Spec
+   74   5.047922    10.0.2.15 → 162.159.61.4 TCP 56 33372 → 443 [ACK] Seq=1912 Ack=1461 Win=63360 Len=0
+   75   5.048430 162.159.61.4 → 10.0.2.15    TLSv1.3 2068 Application Data
+   76   5.048440    10.0.2.15 → 162.159.61.4 TCP 56 33372 → 443 [ACK] Seq=1912 Ack=3473 Win=61920 Len=0
+   77   5.043852    10.0.2.15 → 162.159.61.4 TLSv1.3 120 Change Cipher Spec, Application Data
+   78   5.043852    10.0.2.15 → 162.159.61.4 TLSv1.3 165 Application Data
+   79   5.049909 162.159.61.4 → 10.0.2.15    TLSv1.3 1516 Server Hello, Change Cipher Spec
+   80   5.043852    10.0.2.15 → 162.159.61.4 TCP 56 33346 → 443 [ACK] Seq=1912 Ack=1461 Win=63360 Len=0
+   81   5.050334 162.159.61.4 → 10.0.2.15    TCP 62 443 → 33372 [ACK] Seq=3473 Ack=2085 Win=65535 Len=0
+   82   5.050856 162.159.61.4 → 10.0.2.15    TLSv1.3 2069 Application Data
+   83   5.050865    10.0.2.15 → 162.159.61.4 TCP 56 33346 → 443 [ACK] Seq=1912 Ack=3474 Win=63360 Len=0
+   84   5.047852    10.0.2.15 → 162.159.61.4 TLSv1.3 120 Change Cipher Spec, Application Data
+   85   5.047852    10.0.2.15 → 162.159.61.4 TLSv1.3 165 Application Data
+   86   5.052122 162.159.61.4 → 10.0.2.15    TCP 62 443 → 33346 [ACK] Seq=3474 Ack=1976 Win=65535 Len=0
+   87   5.052505 162.159.61.4 → 10.0.2.15    TCP 62 443 → 33346 [ACK] Seq=3474 Ack=2085 Win=65535 Len=0
+   88   5.054871 162.159.61.4 → 10.0.2.15    TLSv1.3 584 Application Data, Application Data
+   89   5.051852    10.0.2.15 → 162.159.61.4 TLSv1.3 87 Application Data
+   90   5.055903 162.159.61.4 → 10.0.2.15    TLSv1.3 584 Application Data, Application Data
+   91   5.055981 162.159.61.4 → 10.0.2.15    TLSv1.3 584 Application Data, Application Data
+   92   5.056912 162.159.61.4 → 10.0.2.15    TLSv1.3 87 Application Data
+   93   5.056919 162.159.61.4 → 10.0.2.15    TLSv1.3 87 Application Data
+   94   5.056920 162.159.61.4 → 10.0.2.15    TLSv1.3 87 Application Data
+   95   5.051852    10.0.2.15 → 162.159.61.4 TCP 56 33378 → 443 [ACK] Seq=2085 Ack=4032 Win=63360 Len=0
+   96   5.051852    10.0.2.15 → 162.159.61.4 TCP 56 33362 → 443 [ACK] Seq=2085 Ack=4032 Win=63360 Len=0
+   97   5.051852    10.0.2.15 → 162.159.61.4 TLSv1.3 80 Application Data
+   98   5.051852    10.0.2.15 → 162.159.61.4 TCP 56 33362 → 443 [FIN, ACK] Seq=2109 Ack=4032 Win=63360 Len=0
+   99   5.058452 162.159.61.4 → 10.0.2.15    TCP 62 443 → 33362 [ACK] Seq=4032 Ack=2109 Win=65535 Len=0
+  100   5.058834 162.159.61.4 → 10.0.2.15    TCP 62 443 → 33362 [ACK] Seq=4032 Ack=2110 Win=65535 Len=0
+  101   5.051852    10.0.2.15 → 162.159.61.4 TLSv1.3 80 Application Data
+  102   5.051852    10.0.2.15 → 162.159.61.4 TCP 56 33378 → 443 [FIN, ACK] Seq=2109 Ack=4032 Win=63360 Len=0
+  103   5.059438 162.159.61.4 → 10.0.2.15    TCP 62 443 → 33378 [ACK] Seq=4032 Ack=2109 Win=65535 Len=0
+  104   5.059445 162.159.61.4 → 10.0.2.15    TCP 62 443 → 33378 [ACK] Seq=4032 Ack=2110 Win=65535 Len=0
+  105   5.060788 162.159.61.4 → 10.0.2.15    TLSv1.3 615 Application Data, Application Data, Application Data
+  106   5.051852    10.0.2.15 → 162.159.61.4 TLSv1.3 80 Application Data
+  107   5.051852    10.0.2.15 → 162.159.61.4 TCP 56 33372 → 443 [FIN, ACK] Seq=2109 Ack=4032 Win=63360 Len=0
+  108   5.061580 162.159.61.4 → 10.0.2.15    TCP 62 443 → 33372 [ACK] Seq=4032 Ack=2110 Win=65535 Len=0
+  109   5.064021 162.159.61.4 → 10.0.2.15    TLSv1.3 593 Application Data, Application Data
+  110   5.051852    10.0.2.15 → 162.159.61.4 TLSv1.3 80 Application Data
+  111   5.051852    10.0.2.15 → 162.159.61.4 TCP 56 33346 → 443 [FIN, ACK] Seq=2109 Ack=4011 Win=63360 Len=0
+  112   5.064733 162.159.61.4 → 10.0.2.15    TCP 62 443 → 33346 [ACK] Seq=4011 Ack=2110 Win=65535 Len=0
+  113   5.068779 162.159.61.4 → 10.0.2.15    TCP 62 443 → 33362 [FIN, ACK] Seq=4032 Ack=2110 Win=65535 Len=0
+  114   5.068791    10.0.2.15 → 162.159.61.4 TCP 56 33362 → 443 [ACK] Seq=2110 Ack=4033 Win=63360 Len=0
+  115   5.070000 162.159.61.4 → 10.0.2.15    TCP 62 443 → 33378 [FIN, ACK] Seq=4032 Ack=2110 Win=65535 Len=0
+  116   5.070010    10.0.2.15 → 162.159.61.4 TCP 56 33378 → 443 [ACK] Seq=2110 Ack=4033 Win=63360 Len=0
+  117   5.072923 162.159.61.4 → 10.0.2.15    TCP 62 443 → 33372 [FIN, ACK] Seq=4032 Ack=2110 Win=65535 Len=0
+  118   5.072933    10.0.2.15 → 162.159.61.4 TCP 56 33372 → 443 [ACK] Seq=2110 Ack=4033 Win=63360 Len=0
+  119   5.076761 162.159.61.4 → 10.0.2.15    TCP 62 443 → 33346 [FIN, ACK] Seq=4011 Ack=2110 Win=65535 Len=0
+  120   5.076771    10.0.2.15 → 162.159.61.4 TCP 56 33346 → 443 [ACK] Seq=2110 Ack=4012 Win=63360 Len=0
+  121   5.113822    10.0.2.15 → 162.159.61.4 TCP 56 33368 → 443 [ACK] Seq=2099 Ack=4033 Win=63360 Len=0
+  122   8.402836    10.0.2.15 → 162.159.61.4 TCP 56 33368 → 443 [FIN, ACK] Seq=2099 Ack=4033 Win=63360 Len=0
+  123   8.403280 162.159.61.4 → 10.0.2.15    TCP 62 443 → 33368 [ACK] Seq=4033 Ack=2100 Win=65535 Len=0
+  124   8.419136 162.159.61.4 → 10.0.2.15    TCP 62 443 → 33368 [FIN, ACK] Seq=4033 Ack=2100 Win=65535 Len=0
+  125   8.419159    10.0.2.15 → 162.159.61.4 TCP 56 33368 → 443 [ACK] Seq=2100 Ack=4034 Win=63360 Len=0

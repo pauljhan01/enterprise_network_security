@@ -1,0 +1,10 @@
+    1   0.000000    127.0.0.1 → 127.0.0.53   DNS 88 Standard query 0xbc02 A mozilla.cloudflare-dns.com
+    2   0.000000    10.0.2.15 → 192.168.1.254 DNS 99 Standard query 0x92a4 A mozilla.cloudflare-dns.com OPT
+    3   0.000000    127.0.0.1 → 127.0.0.53   DNS 88 Standard query 0xbc02 AAAA mozilla.cloudflare-dns.com
+    4   0.000000   127.0.0.53 → 127.0.0.1    DNS 144 Standard query response 0xbc02 AAAA mozilla.cloudflare-dns.com AAAA 2803:f800:53::4 AAAA 2a06:98c1:52::4
+    5   0.017930 192.168.1.254 → 10.0.2.15    DNS 131 Standard query response 0x92a4 A mozilla.cloudflare-dns.com A 172.64.41.4 A 162.159.61.4 OPT
+    6   0.012000   127.0.0.53 → 127.0.0.1    DNS 120 Standard query response 0xbc02 A mozilla.cloudflare-dns.com A 172.64.41.4 A 162.159.61.4
+    7   2.987913    127.0.0.1 → 127.0.0.53   DNS 97 Standard query 0xcfeb A content-signature-2.cdn.mozilla.net
+    8   2.987913    127.0.0.1 → 127.0.0.53   DNS 97 Standard query 0xcfeb AAAA content-signature-2.cdn.mozilla.net
+    9   2.987913   127.0.0.53 → 127.0.0.1    DNS 113 Standard query response 0xcfeb A content-signature-2.cdn.mozilla.net A 34.160.144.191
+   10   2.987913   127.0.0.53 → 127.0.0.1    DNS 125 Standard query response 0xcfeb AAAA content-signature-2.cdn.mozilla.net AAAA 2600:1901:0:92a9::

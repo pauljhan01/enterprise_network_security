@@ -1,0 +1,41 @@
+    1   0.000000 185.195.233.76 → 10.0.2.15    WireGuard 156 Transport Data, receiver=0x9BD0589B, counter=312, datalen=80
+    2   0.001888    10.64.0.1 → 10.128.27.116 ICMP 86 Echo (ping) reply    id=0x8f66, seq=78/19968, ttl=64
+    3   2.757156 10.128.27.116 → 10.64.0.1    DNS 73 Standard query 0x51f6 A web.mit.edu
+    4   2.757156 10.128.27.116 → 10.64.0.1    DNS 73 Standard query 0x51f6 AAAA web.mit.edu
+    5   2.769156    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x3CCC4E66, counter=262, datalen=64
+    6   2.769156    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x3CCC4E66, counter=263, datalen=64
+    7   2.915308 185.195.233.76 → 10.0.2.15    WireGuard 236 Transport Data, receiver=0x9BD0589B, counter=313, datalen=160
+    8   2.913158    10.64.0.1 → 10.128.27.116 DNS 162 Standard query response 0x51f6 A web.mit.edu CNAME www.mit.edu.edgekey.net CNAME e9566.dscb.akamaiedge.net A 88.221.97.35
+    9   2.916835 185.195.233.76 → 10.0.2.15    WireGuard 268 Transport Data, receiver=0x9BD0589B, counter=314, datalen=192
+   10   2.913158    10.64.0.1 → 10.128.27.116 DNS 202 Standard query response 0x51f6 AAAA web.mit.edu CNAME www.mit.edu.edgekey.net CNAME e9566.dscb.akamaiedge.net AAAA 2a02:26f0:e80:589::255e AAAA 2a02:26f0:e80:590::255e
+   11   2.913158 10.128.27.116 → 88.221.97.35 TCP 76 50076 → 80 [SYN] Seq=0 Win=64320 Len=0 MSS=1340 SACK_PERM=1 TSval=3224381718 TSecr=0 WS=128
+   12   2.917158    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x3CCC4E66, counter=264, datalen=64
+   13   3.063360 185.195.233.76 → 10.0.2.15    WireGuard 140 Transport Data, receiver=0x9BD0589B, counter=315, datalen=64
+   14   3.061161 88.221.97.35 → 10.128.27.116 TCP 76 80 → 50076 [SYN, ACK] Seq=0 Ack=1 Win=65160 Len=0 MSS=1340 SACK_PERM=1 TSval=478720418 TSecr=3224381718 WS=128
+   15   3.061161 10.128.27.116 → 88.221.97.35 TCP 68 50076 → 80 [ACK] Seq=1 Ack=1 Win=64384 Len=0 TSval=3224381866 TSecr=478720418
+   16   3.063738 10.128.27.116 → 88.221.97.35 HTTP 143 GET / HTTP/1.1 
+   17   3.061161    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x3CCC4E66, counter=265, datalen=64
+   18   3.061161    10.0.2.15 → 185.195.233.76 WireGuard 204 Transport Data, receiver=0x3CCC4E66, counter=266, datalen=128
+   19   3.209987 185.195.233.76 → 10.0.2.15    WireGuard 140 Transport Data, receiver=0x9BD0589B, counter=316, datalen=64
+   20   3.210167 88.221.97.35 → 10.128.27.116 TCP 68 80 → 50076 [ACK] Seq=1 Ack=76 Win=65152 Len=0 TSval=478720564 TSecr=3224381869
+   21   3.213171 185.195.233.76 → 10.0.2.15    WireGuard 508 Transport Data, receiver=0x9BD0589B, counter=317, datalen=432
+   22   3.209163 88.221.97.35 → 10.128.27.116 HTTP 435 HTTP/1.1 301 Moved Permanently 
+   23   3.209163 10.128.27.116 → 88.221.97.35 TCP 68 50076 → 80 [ACK] Seq=76 Ack=368 Win=64256 Len=0 TSval=3224382014 TSecr=478720567
+   24   3.213163    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x3CCC4E66, counter=267, datalen=64
+   25   3.213936 10.128.27.116 → 88.221.97.35 TCP 68 50076 → 80 [FIN, ACK] Seq=76 Ack=368 Win=64256 Len=0 TSval=3224382019 TSecr=478720567
+   26   3.213163    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x3CCC4E66, counter=268, datalen=64
+   27   3.360822 185.195.233.76 → 10.0.2.15    WireGuard 140 Transport Data, receiver=0x9BD0589B, counter=318, datalen=64
+   28   3.357166 88.221.97.35 → 10.128.27.116 TCP 68 80 → 50076 [FIN, ACK] Seq=368 Ack=77 Win=65152 Len=0 TSval=478720714 TSecr=3224382019
+   29   3.357166 10.128.27.116 → 88.221.97.35 TCP 68 50076 → 80 [ACK] Seq=77 Ack=369 Win=64256 Len=0 TSval=3224382162 TSecr=478720714
+   30   3.357166    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x3CCC4E66, counter=269, datalen=64
+   31   4.965192 10.128.27.116 → 192.160.102.164 TCP 76 52174 → 9001 [SYN] Seq=0 Win=64320 Len=0 MSS=1340 SACK_PERM=1 TSval=3081996208 TSecr=0 WS=128
+   32   4.967069    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x3CCC4E66, counter=270, datalen=64
+   33   5.098132 PcsCompu_ed:ac:df →              ARP 44 Who has 10.0.2.2? Tell 10.0.2.15
+   34   5.176228 52:55:0a:00:02:02 →              ARP 66 10.0.2.2 is at 52:55:0a:00:02:02
+   35   6.175544 193.11.114.43 → 10.0.2.15    TCP 62 9001 → 48812 [FIN, ACK] Seq=1 Ack=1 Win=65535 Len=0
+   36   6.909224 10.128.27.116 → 192.160.102.166 TCP 76 48206 → 9001 [SYN] Seq=0 Win=64320 Len=0 MSS=1340 SACK_PERM=1 TSval=3855593849 TSecr=0 WS=128
+   37   6.989225    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x3CCC4E66, counter=271, datalen=64
+   38  10.403556 10.128.27.116 → 10.64.0.1    ICMP 86 Echo (ping) request  id=0x8f66, seq=79/20224, ttl=64
+   39  10.401282    10.0.2.15 → 185.195.233.76 WireGuard 156 Transport Data, receiver=0x3CCC4E66, counter=272, datalen=80
+   40  10.549440 185.195.233.76 → 10.0.2.15    WireGuard 156 Transport Data, receiver=0x9BD0589B, counter=319, datalen=80
+   41  10.549284    10.64.0.1 → 10.128.27.116 ICMP 86 Echo (ping) reply    id=0x8f66, seq=79/20224, ttl=64 (request in 38)

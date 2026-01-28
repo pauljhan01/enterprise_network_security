@@ -1,0 +1,22 @@
+    1   0.000000 10.128.27.116 → 37.139.8.104 TCP 76 49990 → 9001 [SYN] Seq=0 Win=64320 Len=0 MSS=1340 SACK_PERM=1 TSval=765471474 TSecr=0 WS=128
+    2   0.000000    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x4284655F, counter=70, datalen=64
+    3   1.032031 10.128.27.116 → 37.139.8.104 TCP 76 [TCP Retransmission] 49990 → 9001 [SYN] Seq=0 Win=64320 Len=0 MSS=1340 SACK_PERM=1 TSval=765472506 TSecr=0 WS=128
+    4   1.032031    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x4284655F, counter=71, datalen=64
+    5   2.672395 10.128.27.116 → 10.64.0.1    DNS 78 Standard query 0xa39a A www.utdallas.edu
+    6   2.672510 10.128.27.116 → 10.64.0.1    DNS 78 Standard query 0xa39a AAAA www.utdallas.edu
+    7   2.668080    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x4284655F, counter=72, datalen=64
+    8   2.668080    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x4284655F, counter=73, datalen=64
+    9   3.023979 185.195.233.76 → 10.0.2.15    WireGuard 348 Transport Data, receiver=0x2E2F3ABD, counter=141, datalen=272
+   10   3.020090    10.64.0.1 → 10.128.27.116 DNS 285 Standard query response 0xa39a AAAA www.utdallas.edu CNAME www.utdallas.edu.c14751.campuspress.com CNAME cloudflare-resolve-to.c14751.campuspress.com CNAME utdallas.us-east-2.lb.campuspress.com SOA ns-1262.awsdns-29.org
+   11   3.046831 185.195.233.76 → 10.0.2.15    WireGuard 300 Transport Data, receiver=0x2E2F3ABD, counter=142, datalen=224
+   12   3.044091    10.64.0.1 → 10.128.27.116 DNS 235 Standard query response 0xa39a A www.utdallas.edu CNAME www.utdallas.edu.c14751.campuspress.com CNAME cloudflare-resolve-to.c14751.campuspress.com CNAME utdallas.us-east-2.lb.campuspress.com A 3.133.32.155 A 3.21.250.42
+   13   3.067044 10.128.27.116 → 37.139.8.104 TCP 76 [TCP Retransmission] 49990 → 9001 [SYN] Seq=0 Win=64320 Len=0 MSS=1340 SACK_PERM=1 TSval=765474541 TSecr=0 WS=128
+   14   3.067522    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x4284655F, counter=74, datalen=64
+   15   7.157607 10.128.27.116 → 37.139.8.104 TCP 76 [TCP Retransmission] 49990 → 9001 [SYN] Seq=0 Win=64320 Len=0 MSS=1340 SACK_PERM=1 TSval=765478632 TSecr=0 WS=128
+   16   7.157684    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x4284655F, counter=75, datalen=64
+   17   7.784232 10.128.27.116 → 10.64.0.1    DNS 78 Standard query 0xa39a A www.utdallas.edu
+   18   7.784232    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x4284655F, counter=76, datalen=64
+   19   7.915567 185.195.233.76 → 10.0.2.15    WireGuard 300 Transport Data, receiver=0x2E2F3ABD, counter=143, datalen=224
+   20   7.912236    10.64.0.1 → 10.128.27.116 DNS 235 Standard query response 0xa39a A www.utdallas.edu CNAME www.utdallas.edu.c14751.campuspress.com CNAME cloudflare-resolve-to.c14751.campuspress.com CNAME utdallas.us-east-2.lb.campuspress.com A 3.21.250.42 A 3.133.32.155
+   21   7.912236 10.128.27.116 → 10.64.0.1    ICMP 263 Destination unreachable (Port unreachable)
+   22   7.912236    10.0.2.15 → 185.195.233.76 WireGuard 332 Transport Data, receiver=0x4284655F, counter=77, datalen=256

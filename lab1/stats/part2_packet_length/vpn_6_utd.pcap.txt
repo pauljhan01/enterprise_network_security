@@ -1,0 +1,22 @@
+    1   0.000000 10.128.27.116 → 10.64.0.1    ICMP 86 Echo (ping) request  id=0x8f66, seq=126/32256, ttl=64
+    2  -0.001397    10.0.2.15 → 185.195.233.76 WireGuard 156 Transport Data, receiver=0x4284655F, counter=616, datalen=80
+    3   0.128783 185.195.233.76 → 10.0.2.15    WireGuard 156 Transport Data, receiver=0x2E2F3ABD, counter=1114, datalen=80
+    4   0.126596    10.64.0.1 → 10.128.27.116 ICMP 86 Echo (ping) reply    id=0x8f66, seq=126/32256, ttl=64 (request in 1)
+    5   2.410468 10.128.27.116 → 10.64.0.1    DNS 78 Standard query 0x544e A www.utdallas.edu
+    6   2.410468 10.128.27.116 → 10.64.0.1    DNS 78 Standard query 0x544e AAAA www.utdallas.edu
+    7   2.410468    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x4284655F, counter=617, datalen=64
+    8   2.410468    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x4284655F, counter=618, datalen=64
+    9   2.546224 185.195.233.76 → 10.0.2.15    WireGuard 348 Transport Data, receiver=0x2E2F3ABD, counter=1115, datalen=272
+   10   2.542460    10.64.0.1 → 10.128.27.116 DNS 285 Standard query response 0x544e AAAA www.utdallas.edu CNAME www.utdallas.edu.c14751.campuspress.com CNAME cloudflare-resolve-to.c14751.campuspress.com CNAME utdallas.us-east-2.lb.campuspress.com SOA ns-1262.awsdns-29.org
+   11   2.557139 185.195.233.76 → 10.0.2.15    WireGuard 300 Transport Data, receiver=0x2E2F3ABD, counter=1116, datalen=224
+   12   2.557251    10.64.0.1 → 10.128.27.116 DNS 235 Standard query response 0x544e A www.utdallas.edu CNAME www.utdallas.edu.c14751.campuspress.com CNAME cloudflare-resolve-to.c14751.campuspress.com CNAME utdallas.us-east-2.lb.campuspress.com A 3.21.250.42 A 3.133.32.155
+   13   3.094429 10.128.27.116 → 37.139.8.104 TCP 76 49990 → 9001 [SYN] Seq=0 Win=64320 Len=0 MSS=1340 SACK_PERM=1 TSval=765536247 TSecr=0 WS=128
+   14   3.094429    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x4284655F, counter=619, datalen=64
+   15   5.135136 PcsCompu_ed:ac:df →              ARP 44 Who has 10.0.2.2? Tell 10.0.2.15
+   16   5.213364 52:55:0a:00:02:02 →              ARP 66 10.0.2.2 is at 52:55:0a:00:02:02
+   17   7.606178 10.128.27.116 → 10.64.0.1    DNS 78 Standard query 0x544e A www.utdallas.edu
+   18   7.606178    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x4284655F, counter=620, datalen=64
+   19   7.774393 185.195.233.76 → 10.0.2.15    WireGuard 300 Transport Data, receiver=0x2E2F3ABD, counter=1117, datalen=224
+   20   7.770169    10.64.0.1 → 10.128.27.116 DNS 235 Standard query response 0x544e A www.utdallas.edu CNAME www.utdallas.edu.c14751.campuspress.com CNAME cloudflare-resolve-to.c14751.campuspress.com CNAME utdallas.us-east-2.lb.campuspress.com A 3.21.250.42 A 3.133.32.155
+   21   7.770169 10.128.27.116 → 10.64.0.1    ICMP 263 Destination unreachable (Port unreachable)
+   22   7.774169    10.0.2.15 → 185.195.233.76 WireGuard 332 Transport Data, receiver=0x4284655F, counter=621, datalen=256

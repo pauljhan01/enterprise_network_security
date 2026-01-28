@@ -1,0 +1,14 @@
+    1   0.000000 10.128.27.116 → 10.64.0.1    DNS 73 Standard query 0x8213 A www.asu.edu
+    2   0.000000 10.128.27.116 → 10.64.0.1    DNS 73 Standard query 0x8213 AAAA www.asu.edu
+    3   0.000000    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=505, datalen=64
+    4   0.000000    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=506, datalen=64
+    5   0.156602 185.195.233.76 → 10.0.2.15    WireGuard 284 Transport Data, receiver=0x0975D3B5, counter=1007, datalen=208
+    6   0.156634 185.195.233.76 → 10.0.2.15    WireGuard 268 Transport Data, receiver=0x0975D3B5, counter=1008, datalen=192
+    7   0.156793    10.64.0.1 → 10.128.27.116 DNS 217 Standard query response 0x8213 AAAA www.asu.edu CNAME asuedge.acquiaedge.net CNAME asuedge.acquiaedge.net.cdn.cloudflare.net AAAA 2606:4700::6810:4438 AAAA 2606:4700::6810:4338
+    8   0.156848    10.64.0.1 → 10.128.27.116 DNS 193 Standard query response 0x8213 A www.asu.edu CNAME asuedge.acquiaedge.net CNAME asuedge.acquiaedge.net.cdn.cloudflare.net A 104.16.68.56 A 104.16.67.56
+    9   5.000148 10.128.27.116 → 10.64.0.1    DNS 73 Standard query 0x8213 A www.asu.edu
+   10   5.012148    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x781D81D2, counter=507, datalen=64
+   11   5.153808 185.195.233.76 → 10.0.2.15    WireGuard 268 Transport Data, receiver=0x0975D3B5, counter=1009, datalen=192
+   12   5.152152    10.64.0.1 → 10.128.27.116 DNS 193 Standard query response 0x8213 A www.asu.edu CNAME asuedge.acquiaedge.net CNAME asuedge.acquiaedge.net.cdn.cloudflare.net A 104.16.67.56 A 104.16.68.56
+   13   5.152152 10.128.27.116 → 10.64.0.1    ICMP 221 Destination unreachable (Port unreachable)
+   14   5.152152    10.0.2.15 → 185.195.233.76 WireGuard 284 Transport Data, receiver=0x781D81D2, counter=508, datalen=208

@@ -1,0 +1,32 @@
+    1   0.000000 10.128.27.116 → 10.64.0.1    DNS 73 Standard query 0x49c1 A www.unm.edu
+    2   0.000000    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x90DDF161, counter=422, datalen=64
+    3   0.000000 10.128.27.116 → 10.64.0.1    DNS 73 Standard query 0x49c1 AAAA www.unm.edu
+    4   0.000000    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x90DDF161, counter=423, datalen=64
+    5   0.149493 185.195.233.76 → 10.0.2.15    WireGuard 172 Transport Data, receiver=0xD1C3ADF8, counter=778, datalen=96
+    6   0.148003    10.64.0.1 → 10.128.27.116 DNS 109 Standard query response 0x49c1 A www.unm.edu CNAME wwwvs.unm.edu A 129.24.172.124
+    7   0.149957 185.195.233.76 → 10.0.2.15    WireGuard 220 Transport Data, receiver=0xD1C3ADF8, counter=779, datalen=144
+    8   0.148003    10.64.0.1 → 10.128.27.116 DNS 146 Standard query response 0x49c1 AAAA www.unm.edu CNAME wwwvs.unm.edu SOA ns1.unm.edu
+    9   0.148003 10.128.27.116 → 129.24.172.124 TCP 76 37492 → 80 [SYN] Seq=0 Win=64320 Len=0 MSS=1340 SACK_PERM=1 TSval=2950104109 TSecr=0 WS=128
+   10   0.148003    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x90DDF161, counter=424, datalen=64
+   11   0.467443 185.195.233.76 → 10.0.2.15    WireGuard 140 Transport Data, receiver=0xD1C3ADF8, counter=780, datalen=64
+   12   0.467603 129.24.172.124 → 10.128.27.116 TCP 72 80 → 37492 [SYN, ACK] Seq=0 Ack=1 Win=4020 Len=0 MSS=1340 SACK_PERM=1 TSval=4248156139 TSecr=2950104109
+   13   0.467683 10.128.27.116 → 129.24.172.124 TCP 68 37492 → 80 [ACK] Seq=1 Ack=1 Win=64320 Len=0 TSval=2950104428 TSecr=4248156139
+   14   0.464009    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x90DDF161, counter=425, datalen=64
+   15   0.464009 10.128.27.116 → 129.24.172.124 HTTP 143 GET / HTTP/1.1 
+   16   0.464009    10.0.2.15 → 185.195.233.76 WireGuard 204 Transport Data, receiver=0x90DDF161, counter=426, datalen=128
+   17   0.788021 185.195.233.76 → 10.0.2.15    WireGuard 252 Transport Data, receiver=0xD1C3ADF8, counter=781, datalen=176
+   18   0.784016 129.24.172.124 → 10.128.27.116 HTTP 192 HTTP/1.0 302 Moved Temporarily 
+   19   0.784016 10.128.27.116 → 129.24.172.124 TCP 68 37492 → 80 [ACK] Seq=76 Ack=125 Win=64196 Len=0 TSval=2950104745 TSecr=4248156458
+   20   0.784016    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x90DDF161, counter=427, datalen=64
+   21   0.784016 10.128.27.116 → 129.24.172.124 TCP 68 37492 → 80 [FIN, ACK] Seq=76 Ack=125 Win=64196 Len=0 TSval=2950104745 TSecr=4248156458
+   22   0.784016    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x90DDF161, counter=428, datalen=64
+   23   1.105400 185.195.233.76 → 10.0.2.15    WireGuard 140 Transport Data, receiver=0xD1C3ADF8, counter=782, datalen=64
+   24   1.104023 129.24.172.124 → 10.128.27.116 TCP 68 80 → 37492 [ACK] Seq=125 Ack=77 Win=4095 Len=0 TSval=4248156778 TSecr=2950104745
+   25   1.106026 185.195.233.76 → 10.0.2.15    WireGuard 140 Transport Data, receiver=0xD1C3ADF8, counter=783, datalen=64
+   26   1.104023 129.24.172.124 → 10.128.27.116 TCP 68 80 → 37492 [FIN, ACK] Seq=125 Ack=77 Win=4095 Len=0 TSval=4248156778 TSecr=2950104745
+   27   1.104023 10.128.27.116 → 129.24.172.124 TCP 68 37492 → 80 [ACK] Seq=77 Ack=126 Win=64196 Len=0 TSval=2950105065 TSecr=4248156778
+   28   1.104023    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x90DDF161, counter=429, datalen=64
+   29   2.135317 10.128.27.116 → 81.7.11.186  TCP 76 40180 → 443 [SYN] Seq=0 Win=64320 Len=0 MSS=1340 SACK_PERM=1 TSval=1539987512 TSecr=0 WS=128
+   30   2.132044    10.0.2.15 → 185.195.233.76 WireGuard 140 Transport Data, receiver=0x90DDF161, counter=430, datalen=64
+   31   2.460682 185.195.233.76 → 10.0.2.15    WireGuard 124 Transport Data, receiver=0xD1C3ADF8, counter=784, datalen=48
+   32   2.461086  81.7.11.186 → 10.128.27.116 TCP 56 443 → 40180 [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
