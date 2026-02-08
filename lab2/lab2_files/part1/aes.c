@@ -3,8 +3,9 @@
 #include <stdint.h>
 #include <string.h>
 
-void encrypt_plaintext_aes(char ** plaintext, char * s_box, char ** cipertext, char ** iv, char ** key, char * enc_buf);
+void encrypt_aes_ctr(char * plaintext, char * s_box, char * iv, char * key, char * enc_buf);
 
+void decrypt_aes_ctr(char * encrypted_text, char * decrypted_text, char * s_box, char * iv, char * key);
 
 int main() {
 	//DO NOT MODIFY
@@ -47,12 +48,38 @@ int main() {
 	unsigned char decrypted_text[32];
 	//END DO NOT MODIFY
 
-
 	//YOUR CODE HERE: Implement AES encryption, write the encrypted output of plaintext to enc_buf
 
-	aes_encrypt(s, plaintext, iv, key, enc_buf);
+	//needed for decryption
+	encrypt_aes_ctr(plaintext[0], s, iv[0], key[0], enc_buf);
 
+	printf("Plain text: ");	
+	for(int i = 0; i < 32; i++){
+		printf("%x", plaintext[0][i]);
+	}
+	printf("\n");
+
+	printf("Encrypted data: ");
+	for(int i = 0; i < 32; i++){
+		printf("%x", enc_buf[i]);
+	}
+	printf("\n");
+
+	printf("Cipher text: ");
+	for(int i = 0; i < 32; i++){
+		printf("%x", ciphertext[0][i]);
+	}
+	printf("\n");
+	
 	//YOUR CODE HERE: Implement AES decryption, write the decrypted output of enc_buf to decrypted_text
+
+	decrypt_aes_ctr(enc_buf, decrypted_text, s, iv[0], key[0]);
+
+	printf("Decrypted data: ");
+	for(int i = 0; i < 32; i++){
+		printf("%x", decrypted_text[i]);
+	}
+	printf("\n");
 
 	//DO NOT MODIFY
 	assert(memcmp(enc_buf, ciphertext[0], 32) == 0);
@@ -60,6 +87,260 @@ int main() {
 	return 0;
 }
 
-encrypt_plaintext_aes(char ** plaintext, char * s_box, char ** ciphertext, char ** iv, char **key, char * enc_buf){
+
+
+/*
+ * Substituting the value for state is simply indexing into the S box according to the original value
+ */
+void substitute_bytes(unsigned char state[4][4], unsigned char * s){
+	for(int i = 0; i < 4; i++){
+		for(int j = 0; j < 4; j++){
+			//column major 
+			state[j][i] = s[state[j][i]];
+		}
+	}
+}
+
+/*
+ * Each row is shifted left a number of times equivalent to its index (Row 2 is shifted left 2 times)
+ */
+void shift_rows(unsigned char state[4][4]){
+
+	unsigned char temp = state[1][0];
+    state[1][0] = state[1][1];
+    state[1][1] = state[1][2];
+    state[1][2] = state[1][3];
+    state[1][3] = temp;
+
+	temp = state[2][0];
+	state[2][0] = state[2][2];
+	state[2][2] = temp;
+
+	temp = state[2][1];
+	state[2][1] = state[2][3];
+	state[2][3] = temp;
+
+	temp = state[3][3];
+	state[3][3] = state[3][2];
+	state[3][2] = state[3][1];
+	state[3][1] = state[3][0];
+	state[3][0] = temp;
 
 }
+
+void rotate_word(unsigned char word[4]){
+	unsigned char temp = word[0];
+	word[0] = word[1];
+	word[1] = word[2];
+	word[2] = word[3];
+	word[3] = temp;
+}
+
+void substitute_word(unsigned char word[4], unsigned char * s){
+	for(int i = 0; i < 4; i++){
+		word[i] = s[word[i]];
+	}
+}
+
+unsigned char rcon[11] = {
+	0x00, 0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40, 0x80, 0x1B, 0x36
+};
+
+void key_expansion(unsigned char * key, unsigned char w[60][4], unsigned char * s){
+	for(int i = 0; i < 8; i++){
+		w[i][0] = key[i*4];
+		w[i][1] = key[i*4 + 1];
+		w[i][2] = key[i*4 + 2];
+		w[i][3] = key[i*4 + 3];
+	}
+
+	for(int i = 8; i < 60; i++){
+		unsigned char temp[4];
+		temp[0] = w[i-1][0];	
+		temp[1] = w[i-1][1];
+		temp[2] = w[i-1][2];
+		temp[3] = w[i-1][3];
+
+		if(i % 8 == 0){
+			rotate_word(temp);
+			substitute_word(temp, s);
+			temp[0] ^= rcon[i/8];
+		} else if(i % 8 == 4){
+			substitute_word(temp, s);
+		}
+	
+		w[i][0] = w[i-8][0] ^ temp[0];	
+		w[i][1] = w[i-8][1] ^ temp[1];
+		w[i][2] = w[i-8][2] ^ temp[2];
+		w[i][3] = w[i-8][3] ^ temp[3];
+	}
+}
+
+void add_round_key(unsigned char state[4][4], unsigned char round_key[4][4]){
+	for(int i = 0; i < 4; i++){
+		for(int j = 0; j < 4; j++){
+			state[i][j] ^= round_key[i][j];
+		}
+	}
+}
+
+void sub_bytes(unsigned char state[4][4], unsigned char * s){
+	for(int i = 0; i < 4; i++){
+		for(int j = 0; j < 4; j++){
+			state[i][j] = s[state[i][j]];
+		}
+	}
+}
+
+unsigned char gmul2(unsigned char a){
+	return (a & 0x80) ? ((a << 1) ^ 0x1B) : (a << 1);
+}
+
+unsigned char gmul3(unsigned char a){
+	return gmul2(a) ^ a;
+}
+
+void mix_columns(unsigned char state[4][4]){
+	unsigned char temp[4];
+
+	for(int i = 0; i < 4; i++){
+		temp[0] = state[0][i];
+		temp[1] = state[1][i];
+		temp[2] = state[2][i];
+		temp[3] = state[3][i];
+
+		state[0][i] = gmul2(temp[0]) ^ gmul3(temp[1]) ^ temp[2] ^ temp[3];
+		state[1][i] = temp[0] ^ gmul2(temp[1]) ^ gmul3(temp[2]) ^ temp[3];
+		state[2][i] = temp[0] ^ temp[1] ^ gmul2(temp[2]) ^ gmul3(temp[3]);
+		state[3][i] = gmul3(temp[0]) ^ temp[1] ^ temp[2] ^ gmul2(temp[3]);
+	}
+}
+
+void print_state(unsigned char state[4][4]){
+	printf("state: ");
+	for(int i = 0; i < 4; i++){
+		for(int j = 0; j < 4; j++){
+			printf("%x", state[i][j]);
+		}
+	}
+	printf("\n");
+}
+
+/*
+ * 1. Requires expanding the original key into expanded words (32 bits). We require one subkey (expanded word) for every round required by AES-256 which is 14. This is the Rjindael key schedule algorithm.
+ * 2. For each round excluding the first and last round, we need to:
+ * 	a. Substitute each byte in the input with a value from the S box.
+ * 	b. Shift each row in the current "state" by the index of the row to the left (Row 2 is shifted left twice).
+ * 	c. Each column is then "mixed" by applying matrix multiplication
+ * 	d. Each state is then XORed with the expanded round key
+ * 3. On the last round, we apply every step above, excluding the column mixing.
+ * 4. The final state is the ciphertext block which is actually the encrypted counter/IV combo.
+ */
+void encrypt_aes(unsigned char * input, unsigned char * output, unsigned char * key, unsigned char * s_box){
+	unsigned char state[4][4];
+	unsigned char words[60][4];
+
+	key_expansion(key, words, s_box);
+
+	for(int i = 0; i < 4; i++){
+		for(int j = 0; j < 4; j++){
+			state[j][i] = input[i*4 + j];
+		}
+	}
+
+	unsigned char round_key[4][4];
+	for(int i = 0; i < 4; i++){
+		round_key[0][i] = words[i][0];
+		round_key[1][i] = words[i][1];
+		round_key[2][i] = words[i][2];
+		round_key[3][i] = words[i][3];
+	}
+
+	add_round_key(state, round_key);
+
+	
+	for(int round = 1; round < 14; round++){
+		substitute_bytes(state, s_box);
+		shift_rows(state);
+		mix_columns(state);
+
+		for(int i = 0; i < 4; i++){
+			for(int j = 0; j < 4; j++){
+				round_key[j][i] = words[round*4 + i][j];
+			}
+		}
+
+		add_round_key(state, round_key);
+
+	}
+
+	substitute_bytes(state, s_box);
+	shift_rows(state);
+
+	for(int i = 0; i < 4; i++){
+		for(int j = 0; j < 4; j++){
+			round_key[j][i] = words[14*4 + i][j];
+		}
+	}
+
+	add_round_key(state, round_key);
+
+
+	for(int i = 0; i < 4; i++){
+		for(int j = 0; j < 4; j++){
+			output[i*4 + j] = state[j][i];
+		}
+	}
+}
+
+void increment_counter(unsigned char counter[16]){
+	for(int i = 15; i >= 0; i--){
+		if(++counter[i] != 0){
+			break;
+		}
+	}	
+}
+/*
+	We merely apply the same algorithm as encrypt_aes_ctr to decrypt, only this time the output is the result of XORing the encrypted text with the same encrypted counter
+*/
+void decrypt_aes_ctr(char * encrypted_text, char * decrypted_text, char * s_box, char * iv, char * key){
+	unsigned char counter[16];
+	memcpy(counter, iv, 16);
+
+	unsigned char keystream[16];
+
+	for(int i = 0; i < 32; i += 16){
+		encrypt_aes(counter, keystream, key, s_box);
+	
+		int block_size = (i + 16 <= 32) ? 16 : (32 - i);
+		for(int j = 0; j < block_size; j++){
+			decrypted_text[i + j] = encrypted_text[i + j] ^ keystream[j];
+		}
+
+		increment_counter(counter);
+	}
+}
+/*
+ * To enable encryption for AES in CTR mode, we encrypt the initialization vector concatenated with a counter instead of encrypting the plaintext. Once we encrypt this counter/IV, we XOR
+ * the result with the plaintext to acquire the encrypted plaintext.
+ * This allows us to handle plaintext that has not been padded to align to 128 bits and handle plaintext of any length.
+ */
+void encrypt_aes_ctr(char * plaintext, char * s_box, char * iv, char * key, char * enc_buf){
+	unsigned char counter[16];
+	memcpy(counter, iv, 16);
+
+	unsigned char keystream[16];
+	
+	for(int i = 0; i < 32; i += 16){
+		encrypt_aes(counter, keystream, key, s_box);
+
+		int block_size = (i + 16 <= 32) ? 16 : (32 - i);
+		for(int j = 0; j < block_size; j++){
+			enc_buf[i + j] = plaintext[i + j] ^ keystream[j];
+		}
+
+		increment_counter(counter);
+	}
+
+}
+
