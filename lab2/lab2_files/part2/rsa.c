@@ -4,6 +4,7 @@
 #include <math.h>
 #include <stdint.h>
 #include <string.h>
+#include <stdlib.h>
 
 typedef struct uint128 {
   uint64_t hi;
@@ -49,12 +50,6 @@ int main() {
 	char * padded_plaintext = (char *)malloc(sizeof(char) * (len + NUM_PADDED_BYTES));
 	pad_pkcs15(padded_plaintext, plaintext);
 	
-	len = strlen(padded_plaintext) + 1;
-	for(int i = 0; i < len; i++){
-		printf("%x", padded_plaintext);
-	}
-	printf("\n");
-
 	//DO NOT MODIFY
 	char *encrypted_text = (char*)&ciphertext;
 	printf("encrypted=%s\n", encrypted_text);
@@ -70,11 +65,27 @@ int main() {
 
 void pad_pkcs15(char * padded_plaintext, const char plaintext[]){
 	int len = strlen(plaintext);
-	for(int i = 0; i <= len; i++){
-		padded_plaintext[i] = plaintext[i];
+	padded_plaintext[0] = 0x00;
+	padded_plaintext[1] = 0x02;
+
+	for(int i = 2; i < NUM_PADDED_BYTES; i++){
+		padded_plaintext[i] = 0x03;
 	}
 
-	padded_plaintext[len+1] = 0x00;
-	padded_plaintext[len+2] = 0x02;
-	padded_plaintext[len+3] = 0x00;
+	padded_plaintext[NUM_PADDED_BYTES] = 0x00;
+
+	//include NULL terminator
+	for(int i = 0; i < len + 1; i++){
+		padded_plaintext[i + NUM_PADDED_BYTES + 1] = plaintext[i];
+	}
+
+	for(int i = 0; i < len + 1 + NUM_PADDED_BYTES; i++){
+		printf("%x", padded_plaintext[i]);
+	}
+	printf("\n");
+
+	for(int i = 0; i < len; i++){
+		printf("%x", plaintext[i]);
+	}
+	printf("\n");
 }
