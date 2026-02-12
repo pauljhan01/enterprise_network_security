@@ -11,7 +11,14 @@ typedef struct uint128 {
   uint64_t lo;
 } uint128;
 
+typedef struct message_text{
+	char * string;
+	uint32_t len;
+}msg_txt_t;
+
 void pad_pkcs15(char * padded_plaintext, const char plaintext[]);
+
+void pack_char_arr_uint128(msg_txt_t * message_txt, uint128 * message);
 
 
 int main() {
@@ -46,9 +53,18 @@ int main() {
 	* 2. Compute the integer representation of the message using the PKCS 1.5 padding scheme
 	*/
 	#define NUM_PADDED_BYTES 8
-	int len = strlen(plaintext) + 1;
-	char * padded_plaintext = (char *)malloc(sizeof(char) * (len + NUM_PADDED_BYTES));
-	pad_pkcs15(padded_plaintext, plaintext);
+	int len = NUM_PADDED_BYTES + strlen(plaintext) + 1;
+	
+	msg_txt_t * message_txt = (msg_txt_t *)calloc(1, sizeof(msg_txt_t));
+	message_txt->string = (char *)calloc(len, sizeof(char));
+	message_txt->len = len;
+	pad_pkcs15(message_txt->string, plaintext);
+	
+	uint128 * message = (uint128 *)calloc(1, sizeof(uint128));
+	pack_char_arr_uint128(message_txt, message);	
+
+	free(message_txt->string);
+	free(message_txt);
 	
 	//DO NOT MODIFY
 	char *encrypted_text = (char*)&ciphertext;
@@ -63,29 +79,34 @@ int main() {
 	assert(strcmp(plaintext, decrypted_text) == 0);
 }
 
+void pack_char_arr_uint128(msg_txt_t * message_txt, uint128 * message){
+	uint32_t shifts = 0;
+	for(int i = 0; i < message_txt->len; i++){
+		if(i * 8 >= 64){
+			message->hi = message->hi | (message_txt->string[i] << (i*8));
+		}else{
+			message->lo = message->lo | (message_txt->string[i] << (i*8));
+		}
+		printf("%x", message_txt->string[i]);
+	}
+	printf("\n");
+}
+
 void pad_pkcs15(char * padded_plaintext, const char plaintext[]){
 	int len = strlen(plaintext);
 	padded_plaintext[0] = 0x00;
 	padded_plaintext[1] = 0x02;
 
-	for(int i = 2; i < NUM_PADDED_BYTES; i++){
+	for(int i = 2; i < NUM_PADDED_BYTES - 1; i++){
 		padded_plaintext[i] = 0x03;
 	}
 
-	padded_plaintext[NUM_PADDED_BYTES] = 0x00;
+	padded_plaintext[NUM_PADDED_BYTES - 1] = 0x00;
 
 	//include NULL terminator
 	for(int i = 0; i < len + 1; i++){
-		padded_plaintext[i + NUM_PADDED_BYTES + 1] = plaintext[i];
+		padded_plaintext[i + NUM_PADDED_BYTES] = plaintext[i];
 	}
-
-	for(int i = 0; i < len + 1 + NUM_PADDED_BYTES; i++){
-		printf("%x", padded_plaintext[i]);
-	}
-	printf("\n");
-
-	for(int i = 0; i < len; i++){
-		printf("%x", plaintext[i]);
-	}
-	printf("\n");
+	
+	
 }
