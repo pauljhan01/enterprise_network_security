@@ -1,0 +1,60 @@
+Classification Report for 70/30 split on vectorized dataset
+              precision    recall  f1-score   support
+
+           0       0.98      0.98      0.98     20737
+           1       0.98      0.98      0.98     16940
+
+    accuracy                           0.98     37677
+   macro avg       0.98      0.98      0.98     37677
+weighted avg       0.98      0.98      0.98     37677
+
+Classification Report for 80/20 split on vectorized dataset
+              precision    recall  f1-score   support
+
+           0       0.99      0.98      0.98     13829
+           1       0.98      0.98      0.98     11289
+
+    accuracy                           0.98     25118
+   macro avg       0.98      0.98      0.98     25118
+weighted avg       0.98      0.98      0.98     25118
+
+Classification Report for 90/10 split on vectorized dataset
+              precision    recall  f1-score   support
+
+           0       0.98      0.98      0.98      6898
+           1       0.98      0.98      0.98      5661
+
+    accuracy                           0.98     12559
+   macro avg       0.98      0.98      0.98     12559
+weighted avg       0.98      0.98      0.98     12559
+
+Classification Report for 70/30 split on pre-vectorized dataset
+              precision    recall  f1-score   support
+
+           0       0.99      0.99      0.99     20737
+           1       0.99      0.99      0.99     16940
+
+    accuracy                           0.99     37677
+   macro avg       0.99      0.99      0.99     37677
+weighted avg       0.99      0.99      0.99     37677
+
+Classification Report for 80/20 split on pre-vectorized dataset
+              precision    recall  f1-score   support
+
+           0       0.99      0.99      0.99     13829
+           1       0.99      0.99      0.99     11289
+
+    accuracy                           0.99     25118
+   macro avg       0.99      0.99      0.99     25118
+weighted avg       0.99      0.99      0.99     25118
+
+Classification Report for 90/10 split on pre-vectorized dataset
+              precision    recall  f1-score   support
+
+           0       1.00      0.99      0.99      6898
+           1       0.99      0.99      0.99      5661
+
+    accuracy                           0.99     12559
+   macro avg       0.99      0.99      0.99     12559
+weighted avg       0.99      0.99      0.99     12559
+
