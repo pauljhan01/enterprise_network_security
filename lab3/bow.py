@@ -12,6 +12,7 @@ from sklearn.svm import LinearSVC
 from sklearn.compose import ColumnTransformer
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
+from sklearn.feature_extraction.text import CountVectorizer
 
 import re
 from scipy.sparse import csr_matrix
@@ -27,7 +28,9 @@ vectorized.fillna(value=values, inplace=True)
 
 vectorized['full_text'] = vectorized["subject"] + " " + vectorized["body"] + " " + vectorized["sender"] + vectorized["receiver"]
 
-X = vectorized[["full_text", "urls"]]
+# X = vectorized[["full_text", "urls"]]
+vectorizer = CountVectorizer(ngram_range=(1,2))
+X = vectorizer.fit_transform(vectorized["full_text"])
 y = vectorized["label"]
 
 # print(data[data.isna().any(axis=1)])
@@ -35,15 +38,17 @@ y = vectorized["label"]
 
 test_sizes = [0.3, 0.2, 0.1]
 
-preprocessor = ColumnTransformer(transformers=[
-    ("text", TfidfVectorizer(ngram_range=(1,2), max_features=5000), "full_text"),
-    ("num", "passthrough", ["urls"])
-])
+# preprocessor = ColumnTransformer(transformers=[
+#     ("text", TfidfVectorizer(ngram_range=(1,2), max_features=5000), "full_text"),
+#     ("num", "passthrough", ["urls"])
+# ])
 
-pipeline = Pipeline([
-    ("preprocessor", preprocessor),
-    ("classifier", LogisticRegression())
-])
+# pipeline = Pipeline([
+#     ("preprocessor", preprocessor),
+#     ("classifier", LogisticRegression())
+# ])
+
+pipeline = LinearSVC()
 
 for size in test_sizes:
     print(f"Classification Report for {100-int(size*100)}/{int(size*100)} split on vectorized dataset")
