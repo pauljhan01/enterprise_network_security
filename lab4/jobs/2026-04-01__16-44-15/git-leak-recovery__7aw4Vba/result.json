@@ -1,0 +1,103 @@
+{
+    "id": "0d4a6529-1b68-4c60-9409-24c2c2d527cb",
+    "task_name": "git-leak-recovery",
+    "trial_name": "git-leak-recovery__7aw4Vba",
+    "trial_uri": "file:///Users/paulhan/Documents/Courses/Enterprise_Network_Security/enterprise_network_security/lab4/jobs/2026-04-01__16-44-15/git-leak-recovery__7aw4Vba",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "git-leak-recovery"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "6e313b191485295fc042ddfdc4d1184dc9588de1fa57f7513685fec67a7d7d9d",
+    "config": {
+        "task": {
+            "path": "git-leak-recovery",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "git-leak-recovery__7aw4Vba",
+        "trials_dir": "jobs/2026-04-01__16-44-15",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 4.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "gemini-cli",
+            "import_path": null,
+            "model_name": "google/gemini-flash-lite-latest",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "8b351b4e-22a4-4b10-b43a-722133f87cbb"
+    },
+    "agent_info": {
+        "name": "gemini-cli",
+        "version": "0.36.0",
+        "model_info": {
+            "name": "gemini-flash-lite-latest",
+            "provider": "google"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 439339,
+        "n_cache_tokens": 224264,
+        "n_output_tokens": 2907,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-04-01T21:44:21.223653Z",
+    "finished_at": "2026-04-01T21:47:07.354256Z",
+    "environment_setup": {
+        "started_at": "2026-04-01T21:44:21.224665Z",
+        "finished_at": "2026-04-01T21:44:29.618122Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-04-01T21:44:29.618203Z",
+        "finished_at": "2026-04-01T21:45:15.016541Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-04-01T21:45:15.017587Z",
+        "finished_at": "2026-04-01T21:46:49.027109Z"
+    },
+    "verifier": {
+        "started_at": "2026-04-01T21:46:49.031693Z",
+        "finished_at": "2026-04-01T21:47:05.297574Z"
+    }
+}

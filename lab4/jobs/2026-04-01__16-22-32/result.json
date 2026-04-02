@@ -1,0 +1,29 @@
+{
+    "id": "8b483f25-0b5a-4d61-aa4b-3bf5e7f2e638",
+    "started_at": "2026-04-01T16:22:35.202238",
+    "finished_at": "2026-04-01T16:41:01.055901",
+    "n_total_trials": 1,
+    "stats": {
+        "n_trials": 1,
+        "n_errors": 0,
+        "evals": {
+            "gemini-cli__gemini-flash-latest__terminal-bench": {
+                "n_trials": 1,
+                "n_errors": 0,
+                "metrics": [
+                    {
+                        "mean": 0.0
+                    }
+                ],
+                "reward_stats": {
+                    "reward": {
+                        "0.0": [
+                            "crack-7z-hash__QPn5gjk"
+                        ]
+                    }
+                },
+                "exception_stats": {}
+            }
+        }
+    }
+}

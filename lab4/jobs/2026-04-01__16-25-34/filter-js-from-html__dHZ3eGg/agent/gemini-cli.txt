@@ -1,0 +1,18 @@
+YOLO mode is enabled. All tool calls will be automatically approved.
+YOLO mode is enabled. All tool calls will be automatically approved.
+I have created the `/app/filter.py` script as requested. This script uses regular expressions to remove JavaScript from HTML files while preserving the original formatting and structure.
+
+### Features of the script:
+- **Removes `<script>` tags**: It removes both the script tags and all content within them (including unclosed tags at the end of a file).
+- **Removes inline event handlers**: It identifies and removes attributes starting with `on` (like `onclick`, `onload`, `onmouseover`) within any HTML or SVG tag.
+- **Replaces `javascript:` URIs**: It searches for `javascript:` URIs in common URL-carrying attributes (like `href`, `src`, `action`, `data`) and replaces them with `#` to disable the script while maintaining the attribute structure.
+- **Cleans `style` attributes**: It removes `style` attributes entirely if they contain dangerous patterns like `javascript:` or `expression()`.
+- **Preserves Formatting**: By operating directly on the input string using regular expressions rather than a full HTML parser, the script ensures that the original formatting, indentation, and structure of the HTML are maintained.
+- **In-place modification**: The script takes the file path as an argument and updates the file directly.
+
+### Usage:
+```bash
+python3 /app/filter.py /path/to/your/file.html
+```
+
+You can verify its functionality using the provided `/app/sample.html` file, which contains various XSS vectors that are successfully neutralized by the filter.

@@ -1,0 +1,29 @@
+{
+    "id": "8b351b4e-22a4-4b10-b43a-722133f87cbb",
+    "started_at": "2026-04-01T16:44:19.729451",
+    "finished_at": "2026-04-01T16:47:07.362000",
+    "n_total_trials": 1,
+    "stats": {
+        "n_trials": 1,
+        "n_errors": 0,
+        "evals": {
+            "gemini-cli__gemini-flash-lite-latest__terminal-bench": {
+                "n_trials": 1,
+                "n_errors": 0,
+                "metrics": [
+                    {
+                        "mean": 1.0
+                    }
+                ],
+                "reward_stats": {
+                    "reward": {
+                        "1.0": [
+                            "git-leak-recovery__7aw4Vba"
+                        ]
+                    }
+                },
+                "exception_stats": {}
+            }
+        }
+    }
+}

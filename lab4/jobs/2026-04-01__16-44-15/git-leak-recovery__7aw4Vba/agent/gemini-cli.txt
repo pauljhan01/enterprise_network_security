@@ -1,0 +1,18 @@
+YOLO mode is enabled. All tool calls will be automatically approved.
+YOLO mode is enabled. All tool calls will be automatically approved.
+Error executing tool run_shell_command: Tool execution denied by policy.
+Error executing tool run_shell_command: Tool execution denied by policy.
+Attempt 1 failed with status 503. Retrying with backoff... _ApiError: {"error":{"code":503,"message":"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.","status":"UNAVAILABLE"}}
+    at throwErrorIfNotOK (file:///root/.nvm/versions/node/v22.22.2/lib/node_modules/@google/gemini-cli/bundle/chunk-S2IQOR7T.js:35831:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async file:///root/.nvm/versions/node/v22.22.2/lib/node_modules/@google/gemini-cli/bundle/chunk-S2IQOR7T.js:35582:7
+    at async Models.generateContent (file:///root/.nvm/versions/node/v22.22.2/lib/node_modules/@google/gemini-cli/bundle/chunk-S2IQOR7T.js:36641:16)
+    at async file:///root/.nvm/versions/node/v22.22.2/lib/node_modules/@google/gemini-cli/bundle/chunk-QVTX2M5J.js:276581:26
+    at async file:///root/.nvm/versions/node/v22.22.2/lib/node_modules/@google/gemini-cli/bundle/chunk-QVTX2M5J.js:253666:23
+    at async retryWithBackoff (file:///root/.nvm/versions/node/v22.22.2/lib/node_modules/@google/gemini-cli/bundle/chunk-QVTX2M5J.js:273586:23)
+    at async BaseLlmClient._generateWithRetry (file:///root/.nvm/versions/node/v22.22.2/lib/node_modules/@google/gemini-cli/bundle/chunk-QVTX2M5J.js:273841:14)
+    at async BaseLlmClient.generateJson (file:///root/.nvm/versions/node/v22.22.2/lib/node_modules/@google/gemini-cli/bundle/chunk-QVTX2M5J.js:273748:21)
+    at async LoopDetectionService.queryLoopDetectionModel (file:///root/.nvm/versions/node/v22.22.2/lib/node_modules/@google/gemini-cli/bundle/chunk-QVTX2M5J.js:311284:23) {
+  status: 503
+}
+The secret was successfully recovered from the git history and saved to `/app/secret.txt`. It has since been purged from all branches, tags, and reflogs within the repository, and the repository has been garbage-collected to ensure complete removal.

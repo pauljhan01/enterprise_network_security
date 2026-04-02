@@ -1,0 +1,16 @@
+YOLO mode is enabled. All tool calls will be automatically approved.
+YOLO mode is enabled. All tool calls will be automatically approved.
+Error when talking to Gemini API Full report available at: /tmp/gemini-client-error-Turn.run-sendMessageStream-2026-04-01T20-48-48-884Z.json ModelNotFoundError: This model models/gemini-2.0-flash is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.
+    at classifyGoogleError (file:///root/.nvm/versions/node/v22.22.2/lib/node_modules/@google/gemini-cli/bundle/chunk-QVTX2M5J.js:272938:12)
+    at retryWithBackoff (file:///root/.nvm/versions/node/v22.22.2/lib/node_modules/@google/gemini-cli/bundle/chunk-QVTX2M5J.js:273607:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async GeminiChat.makeApiCallAndProcessStream (file:///root/.nvm/versions/node/v22.22.2/lib/node_modules/@google/gemini-cli/bundle/chunk-QVTX2M5J.js:308672:28)
+    at async GeminiChat.streamWithRetries (file:///root/.nvm/versions/node/v22.22.2/lib/node_modules/@google/gemini-cli/bundle/chunk-QVTX2M5J.js:308515:29)
+    at async Turn.run (file:///root/.nvm/versions/node/v22.22.2/lib/node_modules/@google/gemini-cli/bundle/chunk-QVTX2M5J.js:309002:24)
+    at async GeminiClient.processTurn (file:///root/.nvm/versions/node/v22.22.2/lib/node_modules/@google/gemini-cli/bundle/chunk-QVTX2M5J.js:312720:22)
+    at async GeminiClient.sendMessageStream (file:///root/.nvm/versions/node/v22.22.2/lib/node_modules/@google/gemini-cli/bundle/chunk-QVTX2M5J.js:312833:14)
+    at async file:///root/.nvm/versions/node/v22.22.2/lib/node_modules/@google/gemini-cli/bundle/gemini.js:9681:26
+    at async main (file:///root/.nvm/versions/node/v22.22.2/lib/node_modules/@google/gemini-cli/bundle/gemini.js:14349:5) {
+  code: 404
+}
+An unexpected critical error occurred:[object Object]

@@ -1,0 +1,22 @@
+{
+  "schema_version": "ATIF-v1.6",
+  "session_id": "b69977ff-8463-4675-a99d-3758aa88bfe6",
+  "agent": {
+    "name": "gemini-cli",
+    "version": "0.36.0"
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "timestamp": "2026-04-01T20:48:48.441Z",
+      "source": "user",
+      "message": "You need to create a file called \"/app/solution.txt\" with the word found in \"secret_file.txt\" in the \"secrets.7z\" archive.\n"
+    }
+  ],
+  "final_metrics": {
+    "total_prompt_tokens": 0,
+    "total_completion_tokens": 0,
+    "total_cached_tokens": 0,
+    "total_steps": 1
+  }
+}

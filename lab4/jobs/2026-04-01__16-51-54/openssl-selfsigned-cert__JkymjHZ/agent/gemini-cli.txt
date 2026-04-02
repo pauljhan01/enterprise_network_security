@@ -1,0 +1,6 @@
+YOLO mode is enabled. All tool calls will be automatically approved.
+YOLO mode is enabled. All tool calls will be automatically approved.
+pgrep: /usr/bin/bash: line 1: pgrep: command not found
+pgrep: /usr/bin/bash: line 1: pgrep: command not found
+pgrep: /usr/bin/bash: line 1: pgrep: command not found
+The self-signed certificate, private key, and PEM file have been created in `/app/ssl/` with appropriate permissions. The verification steps have been completed, and a Python script for verification is available at `/app/check_cert.py`.

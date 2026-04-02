@@ -1,0 +1,103 @@
+{
+    "id": "1dd74b2e-928b-4105-9e5f-deb4240ccbee",
+    "task_name": "crack-7z-hash",
+    "trial_name": "crack-7z-hash__pJVkzuX",
+    "trial_uri": "file:///Users/paulhan/Documents/Courses/Enterprise_Network_Security/enterprise_network_security/lab4/jobs/2026-04-01__15-26-40/crack-7z-hash__pJVkzuX",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "crack-7z-hash"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "6557afcd0ab96deef7a8292019ea507be18f91433df61618b622866a293525a8",
+    "config": {
+        "task": {
+            "path": "crack-7z-hash",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "crack-7z-hash__pJVkzuX",
+        "trials_dir": "jobs/2026-04-01__15-26-40",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "gemini-cli",
+            "import_path": null,
+            "model_name": "google/gemini-flash-lite-latest",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "b55d3975-9db8-488e-b52e-5bc0a8c30678"
+    },
+    "agent_info": {
+        "name": "gemini-cli",
+        "version": "0.35.3",
+        "model_info": {
+            "name": "gemini-flash-lite-latest",
+            "provider": "google"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1833822,
+        "n_cache_tokens": 1522351,
+        "n_output_tokens": 2851,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-04-01T20:26:45.052435Z",
+    "finished_at": "2026-04-01T20:41:45.554668Z",
+    "environment_setup": {
+        "started_at": "2026-04-01T20:26:45.054337Z",
+        "finished_at": "2026-04-01T20:27:05.736374Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-04-01T20:27:05.736453Z",
+        "finished_at": "2026-04-01T20:29:07.721542Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-04-01T20:29:07.722213Z",
+        "finished_at": "2026-04-01T20:41:24.116099Z"
+    },
+    "verifier": {
+        "started_at": "2026-04-01T20:41:24.127075Z",
+        "finished_at": "2026-04-01T20:41:42.631244Z"
+    }
+}
