@@ -4,3 +4,4 @@ lab3/*.csv
 lab3/*.zip
 lab3/*.pdf
 lab3/venv/
+*/venv/
