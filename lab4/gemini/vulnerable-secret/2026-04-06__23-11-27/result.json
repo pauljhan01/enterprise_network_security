@@ -1,0 +1,29 @@
+{
+    "id": "7784fb1d-c51a-4cbb-b173-c142b686f905",
+    "started_at": "2026-04-06T23:11:31.569953",
+    "finished_at": "2026-04-06T23:28:57.673118",
+    "n_total_trials": 1,
+    "stats": {
+        "n_trials": 1,
+        "n_errors": 0,
+        "evals": {
+            "gemini-cli__gemini-flash-lite-latest__terminal-bench": {
+                "n_trials": 1,
+                "n_errors": 0,
+                "metrics": [
+                    {
+                        "mean": 1.0
+                    }
+                ],
+                "reward_stats": {
+                    "reward": {
+                        "1.0": [
+                            "vulnerable-secret__sEaMWdj"
+                        ]
+                    }
+                },
+                "exception_stats": {}
+            }
+        }
+    }
+}

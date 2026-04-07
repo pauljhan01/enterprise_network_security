@@ -1,0 +1,29 @@
+{
+    "id": "5cce4b0d-01cc-47f1-965c-d55663fda206",
+    "started_at": "2026-04-06T21:17:19.176663",
+    "finished_at": "2026-04-06T21:19:00.461217",
+    "n_total_trials": 1,
+    "stats": {
+        "n_trials": 1,
+        "n_errors": 0,
+        "evals": {
+            "gemini-cli__gemini-flash-latest__terminal-bench": {
+                "n_trials": 1,
+                "n_errors": 0,
+                "metrics": [
+                    {
+                        "mean": 1.0
+                    }
+                ],
+                "reward_stats": {
+                    "reward": {
+                        "1.0": [
+                            "openssl-selfsigned-cert__MBU5Rcv"
+                        ]
+                    }
+                },
+                "exception_stats": {}
+            }
+        }
+    }
+}

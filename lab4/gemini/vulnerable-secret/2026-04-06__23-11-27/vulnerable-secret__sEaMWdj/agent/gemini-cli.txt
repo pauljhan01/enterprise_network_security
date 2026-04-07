@@ -1,0 +1,43 @@
+YOLO mode is enabled. All tool calls will be automatically approved.
+YOLO mode is enabled. All tool calls will be automatically approved.
+Error executing tool list_directory: Error: Path is not a directory.
+pgrep: /usr/bin/bash: line 1: pgrep: command not found
+pgrep: /usr/bin/bash: line 1: pgrep: command not found
+pgrep: /usr/bin/bash: line 1: pgrep: command not found
+pgrep: /usr/bin/bash: line 1: pgrep: command not found
+missing pgrep output
+pgrep: /usr/bin/bash: line 1: pgrep: command not found
+pgrep: /usr/bin/bash: line 1: pgrep: command not found
+missing pgrep output
+pgrep: /usr/bin/bash: line 1: pgrep: command not found
+pgrep: /usr/bin/bash: line 1: pgrep: command not found
+pgrep: /usr/bin/bash: line 1: pgrep: command not found
+pgrep: /usr/bin/bash: line 1: pgrep: command not found
+pgrep: /usr/bin/bash: line 1: pgrep: command not found
+pgrep: /usr/bin/bash: line 1: pgrep: command not found
+pgrep: /usr/bin/bash: line 1: pgrep: command not found
+pgrep: /usr/bin/bash: line 1: pgrep: command not found
+pgrep: /usr/bin/bash: line 1: pgrep: command not found
+pgrep: /usr/bin/bash: line 1: pgrep: command not found
+pgrep: /usr/bin/bash: line 1: pgrep: command not found
+pgrep: /usr/bin/bash: line 1: pgrep: command not found
+pgrep: /usr/bin/bash: line 1: pgrep: command not found
+pgrep: /usr/bin/bash: line 1: pgrep: command not found
+pgrep: /usr/bin/bash: line 1: pgrep: command not found
+pgrep: /usr/bin/bash: line 1: pgrep: command not found
+pgrep: /usr/bin/bash: line 1: pgrep: command not found
+pgrep: /usr/bin/bash: line 1: pgrep: command not found
+pgrep: /usr/bin/bash: line 1: pgrep: command not found
+pgrep: /usr/bin/bash: line 1: pgrep: command not found
+pgrep: /usr/bin/bash: line 1: pgrep: command not found
+pgrep: /usr/bin/bash: line 1: pgrep: command not found
+pgrep: /usr/bin/bash: line 1: pgrep: command not found
+pgrep: /usr/bin/bash: line 1: pgrep: command not found
+pgrep: /usr/bin/bash: line 1: pgrep: command not found
+pgrep: /usr/bin/bash: line 1: pgrep: command not found
+pgrep: /usr/bin/bash: line 1: pgrep: command not found
+pgrep: /usr/bin/bash: line 1: pgrep: command not found
+pgrep: /usr/bin/bash: line 1: pgrep: command not found
+The secret key was successfully extracted by exploiting a buffer overflow in the `/app/vulnerable` binary. By sending 64 bytes of padding followed by a non-zero byte to overwrite a variable at the `0x40` offset (identified through disassembly as controlling program flow), the binary was coerced into executing the path that reveals the secret.
+
+The final flag, `FLAG{b4ff3r_0v3rfl0w_m4st3r_k3y_2024}`, has been saved to `/app/results.txt`.

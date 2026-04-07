@@ -1,0 +1,25 @@
+Running command: apt-get update && apt-get install -y curl
+Command outputs captured
+Running command: set -euo pipefail; curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.2/install.sh | bash && export NVM_DIR="$HOME/.nvm" && \. "$NVM_DIR/nvm.sh" || true && command -v nvm &>/dev/null || { echo 'Error: NVM failed to load' >&2; exit 1; } && nvm install 22 && npm -v && npm install -g @google/gemini-cli@latest
+Command outputs captured
+Running command: mkdir -p ~/.gemini && cat > ~/.gemini/settings.json << 'SETTINGS'
+{
+  "experimental": {
+    "skills": true
+  }
+}
+SETTINGS
+Command outputs captured
+Running command: . ~/.nvm/nvm.sh && gemini --version
+Command outputs captured
+Running command: . ~/.nvm/nvm.sh; gemini --yolo --model=gemini-flash-lite-latest --prompt='Analyze the following program that contains a secret key. The goal is to extract this secret key and save it to `/app/results.txt`.
+
+The program is available as an executable. You may need to interact with it in various ways to discover how to access the secret information.
+
+The secret key is in the format `FLAG{...}`
+
+The task is complete when you have successfully extracted the secret key and written it to `/app/results.txt`.
+' 2>&1 </dev/null | stdbuf -oL tee /logs/agent/gemini-cli.txt
+Command outputs captured
+Running command: find ~/.gemini/tmp -type f -name 'session-*.json' 2>/dev/null | head -n 1 | xargs -r -I{} cp {} /logs/agent/gemini-cli.trajectory.json
+Command outputs captured

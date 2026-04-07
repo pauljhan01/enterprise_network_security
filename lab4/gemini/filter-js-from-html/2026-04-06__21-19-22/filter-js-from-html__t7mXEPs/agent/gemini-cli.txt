@@ -1,0 +1,55 @@
+YOLO mode is enabled. All tool calls will be automatically approved.
+YOLO mode is enabled. All tool calls will be automatically approved.
+I have created the Python script `/app/filter.py` which removes JavaScript from HTML files while preserving formatting and structure.
+
+The script uses regular expressions to target and remove:
+1.  All `<script>` tags and their contents, including self-closing script tags.
+2.  Inline event handlers (e.g., `onclick`, `onload`, `onmouseover`, etc.) within any HTML tag, handling potential whitespace around the equals sign.
+3.  `javascript:` URIs within attributes (e.g., `href`, `src`, `style`), but only when they appear inside an HTML tag, to avoid accidental removal from plain text content.
+
+The script fulfills the requirement of in-place modification and preserves the original formatting of the HTML file.
+
+```python
+import sys
+import re
+
+def filter_html(content):
+    # First, remove script tags and their content entirely.
+    # Handles both normal <script>...</script> and self-closing <script ... />
+    # Use non-greedy match for content between tags.
+    content = re.sub(r'(?is)<script\b.*?>.*?</script>', '', content)
+    content = re.sub(r'(?is)<script\b[^>]*/>', '', content)
+    
+    # Process each tag to remove event handlers and javascript: URIs.
+    def clean_tag(match):
+        tag = match.group(0)
+        # 1. Remove event handlers: onXXXX="..." or onXXXX='...' or onXXXX=...
+        # Handles potential spaces around the equals sign.
+        tag = re.sub(r"""(?i)\s+on\w+\s*=\s*(?:'[^']*'|"[^"]*"|[^\s>]+)""", '', tag)
+        
+        # 2. Remove javascript: URIs from anywhere in the tag (href, src, style, etc.)
+        # This will only match it within the tag itself, avoiding plain text removal.
+        tag = re.sub(r"""(?i)javascript:[^"'\s>]*""", '', tag)
+        return tag
+
+    # Apply clean_tag to every HTML tag (anything between < and >)
+    content = re.sub(r'(?is)<[^>]*?>', clean_tag, content)
+    
+    return content
+
+if __name__ == "__main__":
+    if len(sys.argv) < 2:
+        sys.exit(1)
+    
+    file_path = sys.argv[1]
+    try:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        filtered_content = filter_html(content)
+        
+        with open(file_path, 'w', encoding='utf-8') as f:
+            f.write(filtered_content)
+    except Exception:
+        sys.exit(1)
+```
