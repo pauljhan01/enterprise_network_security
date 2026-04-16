@@ -1,0 +1,32 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 1,
+            "passed": 0,
+            "failed": 1,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1776305858.0663915,
+            "stop": 1776305858.0780725
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_malicious_files_output",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0003574439979274757,
+                "start": 1776305858.069724,
+                "stop": 1776305858.0778437,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_malicious_files_output():\n        output_file = \"/app/audio/malicious_files.txt\"\n>       assert os.path.exists(output_file), f\"Output file {output_file} not found\"\nE       AssertionError: Output file /app/audio/malicious_files.txt not found\nE       assert False\nE        +  where False = <function exists at 0x73764c31f560>('/app/audio/malicious_files.txt')\nE        +    where <function exists at 0x73764c31f560> = <module 'posixpath' (frozen)>.exists\nE        +      where <module 'posixpath' (frozen)> = os.path\n\n/tests/test_outputs.py:5: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            }
+        ]
+    }
+}

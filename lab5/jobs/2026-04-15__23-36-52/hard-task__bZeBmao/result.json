@@ -1,0 +1,101 @@
+{
+    "id": "6c23ddd1-2cc8-49c9-8b6a-b576ac0443c6",
+    "task_name": "enterprise_security/hard-task",
+    "trial_name": "hard-task__bZeBmao",
+    "trial_uri": "file:///home/paulhan/school/enterprise_network_security/lab5/jobs/2026-04-15__23-36-52/hard-task__bZeBmao",
+    "task_id": {
+        "path": "hard-task"
+    },
+    "source": null,
+    "task_checksum": "effe4d6651663254b3a1d629bdeeaf69b88ff0cb528355b6091304027f5016fd",
+    "config": {
+        "task": {
+            "path": "hard-task",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "hard-task__bZeBmao",
+        "trials_dir": "jobs/2026-04-15__23-36-52",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "gemini-cli",
+            "import_path": null,
+            "model_name": "gemini/gemini-flash-latest",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "425a94cd-d18f-40cb-a56e-df8325706f1b"
+    },
+    "agent_info": {
+        "name": "gemini-cli",
+        "version": "0.38.1",
+        "model_info": {
+            "name": "gemini-flash-latest",
+            "provider": "gemini"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 507513,
+        "n_cache_tokens": 390327,
+        "n_output_tokens": 16973,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-04-16T04:36:58.893374Z",
+    "finished_at": "2026-04-16T04:40:34.300401Z",
+    "environment_setup": {
+        "started_at": "2026-04-16T04:36:58.929995Z",
+        "finished_at": "2026-04-16T04:37:40.494760Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-04-16T04:37:40.494784Z",
+        "finished_at": "2026-04-16T04:38:01.242367Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-04-16T04:38:01.242438Z",
+        "finished_at": "2026-04-16T04:40:23.612212Z"
+    },
+    "verifier": {
+        "started_at": "2026-04-16T04:40:23.613995Z",
+        "finished_at": "2026-04-16T04:40:32.223657Z"
+    }
+}

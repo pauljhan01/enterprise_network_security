@@ -1,0 +1,32 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 1,
+            "passed": 0,
+            "failed": 1,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1776314432.1407356,
+            "stop": 1776314432.1747403
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_spectre_vulnerability_line_number",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0003259699988120701,
+                "start": 1776314432.1692865,
+                "stop": 1776314432.174578,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_spectre_vulnerability_line_number():\n        output_file_path = \"/app/vulnerability_line.txt\"\n        is_vulnerable_line_found = False\n    \n        try:\n            with open(output_file_path, \"r\") as check_file:\n                file_content_words = check_file.read().split()\n                if \"163\" in file_content_words:\n                    is_vulnerable_line_found = True\n        except Exception:\n            pass\n    \n>       assert is_vulnerable_line_found\nE       assert False\n\n/tests/test_outputs.py:15: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            }
+        ]
+    }
+}

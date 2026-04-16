@@ -1,0 +1,29 @@
+{
+    "id": "ba2de239-5490-40b3-8906-d08adfe77096",
+    "started_at": "2026-04-15T23:43:41.258947",
+    "finished_at": "2026-04-15T23:46:01.725877",
+    "n_total_trials": 1,
+    "stats": {
+        "n_trials": 1,
+        "n_errors": 0,
+        "evals": {
+            "gemini-cli__gemini-flash-latest__adhoc": {
+                "n_trials": 1,
+                "n_errors": 0,
+                "metrics": [
+                    {
+                        "mean": 0.0
+                    }
+                ],
+                "reward_stats": {
+                    "reward": {
+                        "0.0": [
+                            "hard-task__r9r6w5C"
+                        ]
+                    }
+                },
+                "exception_stats": {}
+            }
+        }
+    }
+}
