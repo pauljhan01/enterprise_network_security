@@ -5,3 +5,13 @@ lab3/*.zip
 lab3/*.pdf
 lab3/venv/
 */venv/
+Valvano*
+EE319K*
+
+*/startup.s
+*/tm4c123gh6pm.h
+*/random_bit*
+*/Listings/
+*/Objects/
+*/Event*
+*/Pll*
